@@ -20,8 +20,6 @@ const Maps = ({ zoom }) => {
         lng: sumLng / places.length
     }
 
-    console.log(center)
-
     return (
         <div className="map-container">
             <GoogleMapReact
