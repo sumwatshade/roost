@@ -12,12 +12,7 @@ const Home = () => (
       <h1>Welcome to Roost</h1>
       <h2>A website dedicated to supporting local business</h2>
       <code>This page is a work in progress</code>
-      <Maps 
-        center={{
-          lat: 32.71,
-          lng: -117.16
-        }}
-        zoom={11}/>
+      <Maps />
     </main>
 
     <footer>

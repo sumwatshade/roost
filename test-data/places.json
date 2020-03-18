@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Lucas",
+        "venmo": "@lshady",
+        "color": "white",
+        "lat": 32.7445494,
+        "lng": -117.1706039
+    },
+    {
+        "name": "Josh",
+        "venmo": "@seven-grand",
+        "color": "cyan",
+        "lat": 32.7494754,
+        "lng": "-117.1414558"
+    }
+]
