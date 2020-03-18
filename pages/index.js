@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Maps from '../components/Maps'
+import Head from 'next/head';
+import Maps from '../components/Maps';
 
 const Home = () => (
   <div className="container">
@@ -160,6 +160,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
