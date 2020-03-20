@@ -20,7 +20,13 @@ const Home = () => (
     </main>
 
     <footer>
-      Make sure to take care of yourself!
+      Make sure to take care of yourself! Head&nbsp;
+      <a
+        href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+          here
+      </a>&nbsp;for details on COVID-19.
     </footer>
 
     <style jsx>{`
@@ -31,6 +37,11 @@ const Home = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #F5F5F6;
+      }
+
+      h1, h2 {
+        color: #4cb5ab;
       }
 
       main {
@@ -63,7 +74,6 @@ const Home = () => (
 
       a {
         color: inherit;
-        text-decoration: none;
       }
 
       .title a {

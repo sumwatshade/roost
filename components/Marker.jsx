@@ -10,13 +10,14 @@ const Marker = ({name, website, color, lat, lng}) => {
       style={{
         minWidth: '100px',
         minHeight: '10px',
-        border: '1px solid grey',
+        border: '1px solid #F5F5F6',
         borderRadius: '3px',
         backgroundColor: color,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        color: 'white',
       }}
       lat={lat}
       lng={lng}
@@ -30,7 +31,7 @@ const Marker = ({name, website, color, lat, lng}) => {
 
 Marker.defaultProps = {
   name: '',
-  color: 'white',
+  color: '#4cb5ab',
   website: '',
 };
 
