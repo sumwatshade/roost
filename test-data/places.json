@@ -19,5 +19,19 @@
         "website": "https://www.darkhorsecoffeeroasters.com/home",
         "lat": 32.763486,
         "lng": -117.123387
+    },
+    {
+        "name": "James Coffee Co.",
+        "venmo": "",
+        "website": "https://jamescoffeeco.com",
+        "lat": 32.7352236,
+        "lng": -117.1636004
+    },
+    {
+        "name": "Native Poppy",
+        "venmo": "",
+        "website": "https://www.nativepoppy.com/",
+        "lat": 32.726513,
+        "lng": -117.129598
     }
 ]
