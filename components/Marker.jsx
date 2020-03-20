@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {motion} from 'framer-motion';
 
-const Marker = ({name, venmo, color, lat, lng}) => {
+const Marker = ({name, website, color, lat, lng}) => {
   const [clicked, setClicked] = useState(false);
 
   return (
@@ -22,15 +22,15 @@ const Marker = ({name, venmo, color, lat, lng}) => {
       lng={lng}
       onClick={() => setClicked(!clicked)}>
       <div className="name">{name}</div>
-      {clicked ? <div className="modal">{venmo}</div> : '' }
+      {clicked && website ? <a href={website} target="_blank">Website</a> : '' }
     </motion.div>
   );
 };
 
 Marker.defaultProps = {
-  name: 'Luke',
-  color: 'red',
-  venmo: '@luke-shadler',
+  name: '',
+  color: 'white',
+  website: '',
 };
 
 export default Marker;

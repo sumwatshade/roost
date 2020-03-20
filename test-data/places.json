@@ -1,16 +1,23 @@
 [
     {
-        "name": "Lucas",
-        "venmo": "@lshady",
-        "color": "white",
-        "lat": 32.7445494,
-        "lng": -117.1706039
+        "name": "Heartwork Coffee",
+        "venmo": "",
+        "website": "https://heartworkcoffeebar.com/",
+        "lat": 32.7495748,
+        "lng": -117.1712266
     },
     {
-        "name": "Josh",
-        "venmo": "@seven-grand",
-        "color": "cyan",
-        "lat": 32.7494754,
-        "lng": "-117.1414558"
+        "name": "Subterranean Coffee Boutique",
+        "venmo": "",
+        "website": "",
+        "lat": 32.7483809,
+        "lng": -117.1613193
+    },
+    {
+        "name": "Dark Horse Coffee Roasters",
+        "venmo": "",
+        "website": "https://www.darkhorsecoffeeroasters.com/home",
+        "lat": 32.763486,
+        "lng": -117.123387
     }
 ]
