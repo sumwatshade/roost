@@ -2,15 +2,13 @@ import React from 'react';
 
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
-import {API_KEY} from '../api-key';
-
 // TODO: replace with API call?
 import places from '../test-data/places';
 
 const Maps = ({zoom}) => {
   let sumLat = 0; let sumLng = 0;
 
-  const Markers = places.map(({props}) => {
+  const Markers = places.map((props) => {
     sumLat += parseFloat(props.lat);
     sumLng += parseFloat(props.lng);
 
@@ -25,7 +23,7 @@ const Maps = ({zoom}) => {
   return (
     <div className="map-container">
       <GoogleMapReact
-        bootstrapURLKeys={{key: API_KEY}}
+        bootstrapURLKeys={{key: process.env.MAPS_API_KEY}}
         defaultCenter={center}
         defaultZoom={zoom}>
         {Markers}
