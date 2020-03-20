@@ -21,6 +21,7 @@ const Marker = ({name, website, color, lat, lng}) => {
       lat={lat}
       lng={lng}
       onClick={() => setClicked(!clicked)}>
+
       <div className="name">{name}</div>
       {clicked && website ? <a href={website} target="_blank">Website</a> : '' }
     </motion.div>
