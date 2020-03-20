@@ -2,23 +2,25 @@
 import React from 'react';
 import Head from 'next/head';
 import Maps from '../components/Maps';
+import SearchableTable from '../components/SearchableTable';
 
 const Home = () => (
   <div className="container">
     <Head>
       <title>Roost</title>
       <link rel="icon" href="/favicon.ico" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
     </Head>
 
     <main>
       <h1>Welcome to Roost</h1>
-      <h2>A website dedicated to supporting local business</h2>
-      <code>This page is a work in progress</code>
+      <h2>Support local business in a troubling time</h2>
+      <SearchableTable />
       <Maps />
     </main>
 
     <footer>
-      Test
+      Make sure to take care of yourself!
     </footer>
 
     <style jsx>{`
@@ -96,7 +98,7 @@ const Home = () => (
         border-radius: 5px;
         padding: 0.75rem;
         font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+        font-family: Roboto, Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
 
