@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {TextField} from '@material-ui/core';
+import {TextField, withStyles} from '@material-ui/core';
 import Fuse from 'fuse.js'; ;
 
 import Table from './Table';
@@ -15,6 +15,29 @@ const fuseOptions = {
     weight: 0.3,
   }],
 };
+
+
+const CssTextField = withStyles({
+  root: {
+    '& label.Mui-focused': {
+      color: 'white',
+    },
+    '& .MuiInput-underline:after': {
+      borderBottomColor: '#4cb5ab',
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'white',
+      },
+      '&:hover fieldset': {
+        borderColor: 'white',
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: '#4cb5ab',
+      },
+    },
+  },
+})(TextField);
 
 const SearchableTable = ({dataSet}) => {
   const [fuse, setFuse] = useState(null);
@@ -35,12 +58,28 @@ const SearchableTable = ({dataSet}) => {
   }, [search]);
   return (
     <>
-      <TextField
-        placeholder="Search businesses..."
-        onChange={(e) => {
-          setSearch(e.target.value);
-        }}/>
-      <Table rows={rows}/>
+      <form className="textfield">
+        <CssTextField
+          placeholder="Search businesses..."
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}/>
+      </form>
+      <div className="search-table">
+        <Table rows={rows}/>
+      </div>
+
+      <style jsx>{`
+        .search-table {
+          margin: 10px 0;
+          width: 90vw;
+        }
+
+        .textfield {
+          margin: 10px 0;
+          width: 90vw;
+        }
+      `}</style>
     </>
   );
 };
