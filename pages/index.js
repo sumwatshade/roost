@@ -2,7 +2,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Maps from '../components/Maps';
-import BusinessTable from '../components/Table';
+import SearchableTable from '../components/SearchableTable';
 
 const Home = () => (
   <div className="container">
@@ -15,7 +15,7 @@ const Home = () => (
     <main>
       <h1>Welcome to Roost</h1>
       <h2>Support local business in a troubling time</h2>
-      <BusinessTable />
+      <SearchableTable />
       <Maps />
     </main>
 
