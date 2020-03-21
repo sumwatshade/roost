@@ -20,10 +20,11 @@ const Home = () => (
     </main>
 
     <footer>
-      Make sure to take care of yourself! Head&nbsp;
+      Questions? Business Request? Send us a message at&nbsp;
       <WebsiteLink
-        href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf"
-        label="here" />&nbsp;for details on COVID-19.
+        href="mailto:roost.sb@gmail.com"
+        color="primary"
+        label="roost.sb@gmail.com" />
     </footer>
 
     <style jsx>{`
