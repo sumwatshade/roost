@@ -8,7 +8,7 @@ const theme = createMuiTheme({
       main: '#4cb5ab',
     },
     secondary: {
-      main: '#00867d',
+      main: '#546e7a',
     },
     error: {
       main: '#ef5350',
@@ -18,7 +18,7 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    // Use the system font instead of the default Roboto font.
+    fontSize: 12,
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',

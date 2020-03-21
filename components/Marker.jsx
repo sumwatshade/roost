@@ -22,7 +22,7 @@ const Marker = ({name, website, color, lat, lng}) => {
       lng={lng}
       onClick={() => setClicked(!clicked)}>
 
-      <Typography>{name}</Typography>
+      <Typography variant="body2">{name}</Typography>
       {
         clicked && website ?
           <WebsiteLink href={website} label="Website" color="secondary" /> :
