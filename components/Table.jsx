@@ -9,6 +9,7 @@ import {
   Paper,
   TablePagination,
   makeStyles,
+  Typography,
 } from '@material-ui/core';
 
 import WebsiteLink from './WebsiteLink';
@@ -39,8 +40,8 @@ const PlaceTable = ({rows}) => {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Business Name</TableCell>
-              <TableCell align="left">Tags</TableCell>
+              <TableCell><Typography>Business Name</Typography></TableCell>
+              <TableCell align="left"><Typography>Tags</Typography></TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -49,9 +50,18 @@ const PlaceTable = ({rows}) => {
                 .map(({name, website, tags}) => (
                   <TableRow key={name}>
                     <TableCell component="th" scope="row">
-                      {name}{ website ? (<>&nbsp;(<WebsiteLink href={website} color="primary" label="site" />)</>) : ''}
+                      <Typography>
+                        {name}{ website ? (<>&nbsp;(<WebsiteLink
+                          href={website}
+                          color="primary"
+                          label="site" />)</>) : ''}
+                      </Typography>
                     </TableCell>
-                    <TableCell align="left">{tags.join(',')}</TableCell>
+                    <TableCell align="left">
+                      <Typography>
+                        {tags && tags.length ? tags.join(', ') : ''}
+                      </Typography>
+                    </TableCell>
                   </TableRow>
                 ))}
           </TableBody>
