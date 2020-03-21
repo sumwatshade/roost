@@ -31,7 +31,7 @@ export default class RoostDocument extends Document {
   }
 }
 
-MyDocument.getInitialProps = async (ctx) => {
+RoostDocument.getInitialProps = async (ctx) => {
   // Resolution order
   //
   // On the server:
