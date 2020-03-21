@@ -4,34 +4,364 @@
         "venmo": "",
         "website": "https://heartworkcoffeebar.com/",
         "lat": 32.7495748,
-        "lng": -117.1712266
+        "lng": -117.1712266,
+        "tags": [
+            "coffee"
+        ]
     },
     {
         "name": "Subterranean Coffee Boutique",
         "venmo": "",
         "website": "",
         "lat": 32.7483809,
-        "lng": -117.1613193
+        "lng": -117.1613193,
+        "tags": [
+            "coffee"
+        ]
     },
     {
         "name": "Dark Horse Coffee Roasters",
         "venmo": "",
         "website": "https://www.darkhorsecoffeeroasters.com/home",
         "lat": 32.763486,
-        "lng": -117.123387
+        "lng": -117.123387,
+        "tags": [
+            "coffee"
+        ]
     },
     {
         "name": "James Coffee Co.",
         "venmo": "",
         "website": "https://jamescoffeeco.com",
         "lat": 32.7352236,
-        "lng": -117.1636004
+        "lng": -117.1636004,
+        "tags": [
+            "coffee"
+        ]
     },
     {
         "name": "Native Poppy",
         "venmo": "",
         "website": "https://www.nativepoppy.com/",
         "lat": 32.726513,
-        "lng": -117.129598
+        "lng": -117.129598,
+        "tags": [
+            "flowers",
+            "retail"
+        ]
+    },
+    {
+        "name": "T K Doughnut",
+        "website": "",
+        "lat": 32.799014,
+        "lng": -117.192397,
+        "tags": [
+            "donuts",
+            "food"
+        ]
+    },
+    {
+        "name": "Chopsticks Inn",
+        "website": "chopsticksinncuisine.com",
+        "lat": 32.769168,
+        "lng": -117.010243,
+        "tags": [
+            "asian",
+            "food"
+        ]
+    },
+    {
+        "name": "S3 Coffee Bar",
+        "website": "s3coffeebar.com",
+        "lat": 32.788200,
+        "lng": -117.097440,
+        "tags": [
+            "coffee"
+        ]
+    },
+    {
+        "name": "Sunny Donuts",
+        "website": "",
+        "lat": 32.831748,
+        "lng": -117.127846,
+        "tags": [
+            "donuts",
+            "food"
+        ]
+    },
+    {
+        "name": "Kindred",
+        "website": "barkindred.com",
+        "lat": 32.831748,
+        "lng": -117.127846,
+        "tags": [
+            "bar",
+            "vegan"
+        ]
+    },
+    {
+        "name": "Royal Mart",
+        "website": "http://places.singleplatform.com/royal-food-mart/menu",
+        "lat": 32.741053,
+        "lng": -117.163801,
+        "tags": [
+            "sandwiches",
+            "food"
+        ]
+    },
+    {
+        "name": "Las Cuatro Milpas",
+        "website": "http://places.singleplatform.com/las-cuatro-milpas/menu",
+        "lat": 32.701967,
+        "lng": -117.145144,
+        "tags": [
+            "mexican",
+            "food"
+        ]
+    },
+    {
+        "name": "Scrimshaw Coffee",
+        "website": "",
+        "lat": 32.758799,
+        "lng": -117.075271,
+        "tags": [
+            "coffee"
+        ]
+    },
+    {
+        "name": "Southern California Comics",
+        "website": "socalcomics.com",
+        "lat": 32.835564,
+        "lng": -117.146215,
+        "tags": [
+            "comics",
+            "retail"
+        ]
+    },
+    {
+        "name": "Chopstix Too",
+        "website": "chopstixtoo.com",
+        "lat": 32.819746,
+        "lng": -117.149421,
+        "tags": [
+            "asian",
+            "food"
+        ]
+    },
+    {
+        "name": "Super Bronco Taco Shop",
+        "website": "",
+        "lat": 32.555340,
+        "lng": -116.941121
+    },
+    {
+        "name": "Perry's Cafe",
+        "website": "perryscafesd.com",
+        "lat": 32.756341,
+        "lng": -117.201480,
+        "tags": [
+            ""
+        ]
+    },
+    {
+        "name": "Not Not Tacos",
+        "website": "notnottacos.com",
+        "lat": 32.723250,
+        "lng": -117.167664,
+        "tags": [
+            "mexican",
+            "food"
+        ]
+    },
+    {
+        "name": "Mitch's Seafood",
+        "website": "mitchsseafood.com",
+        "lat": 32.724221,
+        "lng": -117.227268,
+        "tags": [
+            "seafood",
+            "food"
+        ]
+    },
+    {
+        "name": "Elevation Culture",
+        "website": "elevationculture.com",
+        "lat": 32.828416,
+        "lng": -117.229545,
+        "tags": [
+            ""
+        ]
+    },
+    {
+        "name": "Sicilia Bella",
+        "website": "siciliabella.us",
+        "lat": 32.847671,
+        "lng": -117.272400,
+        "tags": [
+            "italian",
+            "food"
+        ]
+    },
+    {
+        "name": "Bud and Robs bistro",
+        "website": "budandrobsbistro.com",
+        "lat": 32.713545,
+        "lng": -117.156989,
+        "tags": [
+            "southern",
+            "cajun",
+            "food"
+        ]
+    },
+    {
+        "name": "Wayfarer",
+        "website": "wayfarerbread.com",
+        "lat": 32.813077,
+        "lng": -117.268544,
+        "tags": [
+            "bread",
+            "pastries",
+            "food"
+        ]
+    },
+    {
+        "name": "Earthwell Refill",
+        "website": "earthwellrefill.com",
+        "lat": 32.763508,
+        "lng": -117.106942,
+        "tags": [
+            "sustainable",
+            "retail"
+        ]
+    },
+    {
+        "name": "K Sandwiches",
+        "website": "ksandwiches.com",
+        "lat": 32.801259,
+        "lng": -117.158305,
+        "tags": [
+            ""
+        ]
+    },
+    {
+        "name": "J & T Thai",
+        "website": "jtthaistreetfood.com",
+        "lat": 32.765811,
+        "lng": -117.196136,
+        "tags": [
+            ""
+        ]
+    },
+    {
+        "name": "Shwarma Guys",
+        "website": "theshawarmaguys.com",
+        "lat": 32.726776,
+        "lng": -117.129869,
+        "tags": [
+            ""
+        ]
+    },
+    {
+        "name": "Taste of the Himalayas",
+        "website": "tasteofthemhimalayassandiego.com",
+        "lat": 32.749135,
+        "lng": -117.152157,
+        "tags": [
+            "indian",
+            "food"
+        ]
+    },
+    {
+        "name": "Buona Forchetta",
+        "website": "buonaforchettasd.com",
+        "lat": 32.721216,
+        "lng": -117.130020,
+        "tags": [
+            "italian",
+            "food"
+        ]
+    },
+    {
+        "name": "Chris Ono Grinds",
+        "website": "onogrindsgrill.com",
+        "lat": 32.759468,
+        "lng": -117.130351,
+        "tags": [
+            "hawaiian",
+            "food"
+        ]
+    },
+    {
+        "name": "La Moda Tailoring",
+        "website": "lamodaonline.com",
+        "lat": 32.830535,
+        "lng": -117.139350,
+        "tags": [
+            "tailoring",
+            "retail"
+        ]
+    },
+    {
+        "name": "Kawaii Sushi",
+        "website": "kawaiisushisd.com",
+        "lat": 32.787030,
+        "lng": -117.097384,
+        "tags": [
+            "sushi",
+            "japanese",
+            "food"
+        ]
+    },
+    {
+        "name": "Maxwell’s House of Books",
+        "website": "maxwellshouseofbooks.com",
+        "lat": 32.764872,
+        "lng": -117.019218,
+        "tags": [
+            "books",
+            "retail"
+        ]
+    },
+    {
+        "name": "Delhi Kitchen",
+        "website": "delhikitchen.site",
+        "lat": 32.982384,
+        "lng": -117.075036,
+        "tags": [
+            "indian",
+            "food"
+        ]
+
+    },
+    {
+        "name": "Pop Pie Co.",
+        "website": "poppieco.com",
+        "lat": 32.757506,
+        "lng": -117.146440,
+        "tags": [
+            "pot pies",
+            "food"
+        ]
+    },
+    {
+        "name": "Boto Sushi",
+        "website": "botosushi.com",
+        "lat": 32.980011,
+        "lng": -117.076911,
+        "tags": [
+            "sushi",
+            "japanese",
+            "food"
+        ]
+    },
+    {
+        "name": "Game Empire",
+        "website": "gameempire.com",
+        "lat": 32.833540,
+        "lng": -117.163305,
+        "tags": [
+            "games",
+            "retail"
+        ]
     }
 ]
