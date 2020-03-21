@@ -11,6 +11,8 @@ import {
   makeStyles,
 } from '@material-ui/core';
 
+import WebsiteLink from './WebsiteLink';
+
 const useStyles = makeStyles({
   container: {
     maxHeight: 500,
@@ -38,8 +40,7 @@ const PlaceTable = ({rows}) => {
           <TableHead>
             <TableRow>
               <TableCell>Business Name</TableCell>
-              <TableCell align="left">Website</TableCell>
-              <TableCell align="left">Venmo</TableCell>
+              <TableCell align="left">Payment Info</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -48,12 +49,7 @@ const PlaceTable = ({rows}) => {
                 .map(({name, website, venmo}) => (
                   <TableRow key={name}>
                     <TableCell component="th" scope="row">
-                      {name}
-                    </TableCell>
-                    <TableCell align="left">
-                      <a href={website}
-                        target="_blank"
-                        rel="noopener noreferrer">{website}</a>
+                      <WebsiteLink href={website} label={name} />
                     </TableCell>
                     <TableCell align="left">{venmo}</TableCell>
                   </TableRow>
