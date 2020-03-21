@@ -4,13 +4,12 @@ import Head from 'next/head';
 import Maps from '../components/Maps';
 import SearchableTable from '../components/SearchableTable';
 import {Typography} from '@material-ui/core';
+import WebsiteLink from '../components/WebsiteLink';
 
 const Home = () => (
   <div className="container">
     <Head>
       <title>Roost</title>
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
     </Head>
 
     <main>
@@ -21,20 +20,18 @@ const Home = () => (
     </main>
 
     <footer>
-      Make sure to take care of yourself! Head&nbsp;
-      <a
-        href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf"
-        target="_blank"
-        rel="noopener noreferrer">
-          here
-      </a>&nbsp;for details on COVID-19.
+      Questions? Business Request? Send us a message at&nbsp;
+      <WebsiteLink
+        href="mailto:roost.sb@gmail.com"
+        color="primary"
+        label="roost.sb@gmail.com" />
     </footer>
 
     <style jsx>{`
 
 
       main {
-        padding: 5rem 0;
+        padding: 0;
         flex: 1;
         display: flex;
         flex-direction: column;
