@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Maps from '../components/Maps';
 import SearchableTable from '../components/SearchableTable';
 import {Typography} from '@material-ui/core';
+import WebsiteLink from '../components/WebsiteLink';
 
 const Home = () => (
   <div className="container">
@@ -20,12 +21,9 @@ const Home = () => (
 
     <footer>
       Make sure to take care of yourself! Head&nbsp;
-      <a
+      <WebsiteLink
         href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf"
-        target="_blank"
-        rel="noopener noreferrer">
-          here
-      </a>&nbsp;for details on COVID-19.
+        label="here" />&nbsp;for details on COVID-19.
     </footer>
 
     <style jsx>{`
