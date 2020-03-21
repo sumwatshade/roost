@@ -9,10 +9,13 @@ import places from '../test-data/places';
 const fuseOptions = {
   keys: [{
     name: 'name',
-    weight: 0.7,
+    weight: 0.4,
+  }, {
+    name: 'tags',
+    weight: 0.4,
   }, {
     name: 'website',
-    weight: 0.3,
+    weight: 0.2,
   }],
 };
 
@@ -45,7 +48,8 @@ const SearchableTable = ({dataSet}) => {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    const f = new Fuse(dataSet, fuseOptions);
+    const data = dataSet.sort(() => Math.random() - 0.5);
+    const f = new Fuse(data, fuseOptions);
     setFuse(f);
   }, [dataSet]);
 
@@ -60,7 +64,7 @@ const SearchableTable = ({dataSet}) => {
     <>
       <form className="textfield">
         <TextField
-          placeholder="Search businesses..."
+          placeholder="coffee, bar, vegan..."
           onChange={(e) => {
             setSearch(e.target.value);
           }}

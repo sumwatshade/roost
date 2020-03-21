@@ -40,18 +40,18 @@ const PlaceTable = ({rows}) => {
           <TableHead>
             <TableRow>
               <TableCell>Business Name</TableCell>
-              <TableCell align="left">Payment Info</TableCell>
+              <TableCell align="left">Tags</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                .map(({name, website, venmo}) => (
+                .map(({name, website, tags}) => (
                   <TableRow key={name}>
                     <TableCell component="th" scope="row">
-                      <WebsiteLink href={website} label={name} />
+                      {name}{ website ? (<>&nbsp;(<WebsiteLink href={website} color="primary" label="site" />)</>) : ''}
                     </TableCell>
-                    <TableCell align="left">{venmo}</TableCell>
+                    <TableCell align="left">{tags.join(',')}</TableCell>
                   </TableRow>
                 ))}
           </TableBody>

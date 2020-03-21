@@ -49,7 +49,7 @@ const Maps = ({zoom}) => {
 };
 
 Maps.defaultProps = {
-  zoom: 13,
+  zoom: 11,
 };
 
 export default Maps;
