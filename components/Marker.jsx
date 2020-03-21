@@ -1,31 +1,34 @@
 import React, {useState} from 'react';
 import {motion} from 'framer-motion';
-
+import WebsiteLink from './WebsiteLink';
+import {Paper, Typography} from '@material-ui/core';
 const Marker = ({name, website, color, lat, lng}) => {
   const [clicked, setClicked] = useState(false);
 
   return (
-    <motion.div
+    <Paper component={motion.div}
       layoutTransition
       style={{
         minWidth: '100px',
         minHeight: '10px',
         border: '1px solid #F5F5F6',
         borderRadius: '3px',
-        backgroundColor: color,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        color: 'white',
       }}
       lat={lat}
       lng={lng}
       onClick={() => setClicked(!clicked)}>
 
-      <div className="name">{name}</div>
-      {clicked && website ? <a href={website} target="_blank">Website</a> : '' }
-    </motion.div>
+      <Typography variant="body2">{name}</Typography>
+      {
+        clicked && website ?
+          <WebsiteLink href={website} label="Website" color="secondary" /> :
+          ''
+      }
+    </Paper>
   );
 };
 
