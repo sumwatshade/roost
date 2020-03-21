@@ -1,10 +1,8 @@
 import React from 'react';
-
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
 // TODO: replace with API call?
 import places from '../test-data/places';
-import {Paper} from '@material-ui/core';
 
 const Maps = ({zoom}) => {
   let sumLat = 0; let sumLng = 0;

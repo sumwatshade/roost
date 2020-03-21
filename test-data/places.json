@@ -1,6 +1,7 @@
 [
     {
         "name": "Heartwork Coffee",
+        "iconType": "LocalCafeIcon",
         "venmo": "",
         "website": "https://heartworkcoffeebar.com/",
         "lat": 32.7495748,
@@ -11,6 +12,7 @@
     },
     {
         "name": "Subterranean Coffee Boutique",
+        "iconType": "LocalCafeIcon",
         "venmo": "",
         "website": "",
         "lat": 32.7483809,
@@ -21,6 +23,7 @@
     },
     {
         "name": "Dark Horse Coffee Roasters",
+        "iconType": "LocalCafeIcon",
         "venmo": "",
         "website": "https://www.darkhorsecoffeeroasters.com/home",
         "lat": 32.763486,
@@ -31,6 +34,7 @@
     },
     {
         "name": "James Coffee Co.",
+        "iconType": "LocalCafeIcon",
         "venmo": "",
         "website": "https://jamescoffeeco.com",
         "lat": 32.7352236,
@@ -41,6 +45,7 @@
     },
     {
         "name": "Native Poppy",
+        "iconType": "StoreIcon",
         "venmo": "",
         "website": "https://www.nativepoppy.com/",
         "lat": 32.726513,
