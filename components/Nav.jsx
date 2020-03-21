@@ -30,6 +30,13 @@ const Nav = () => {
 
 
         }
+
+        @media(max-width: 480px) {
+          .navigation {
+            width: 100%;
+            margin: 0;
+          }
+        }
       `}</style>
     </nav>
   );
