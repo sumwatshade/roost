@@ -3,14 +3,22 @@ import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
 import WebsiteLink from './WebsiteLink';
 // TODO: replace with API call?
 import places from '../test-data/places';
-import {Typography, MuiThemeProvider, useTheme, Paper, withStyles} from '@material-ui/core';
-import BusinessIcon from './BusinessIcon';
+import {
+  Typography,
+  MuiThemeProvider,
+  useTheme,
+  Paper,
+  withStyles,
+} from '@material-ui/core'; import BusinessIcon from './BusinessIcon';
+
+const mapStyles = {
+  height: '500px',
+  width: '90vw',
+  borderRadius: '4px',
+};
 
 const StyledPaper = withStyles({
-  root: {
-    height: '500px',
-    width: '90vw',
-  },
+  root: mapStyles,
 })(Paper);
 
 const Maps = ({zoom, google}) => {
@@ -57,11 +65,7 @@ const Maps = ({zoom, google}) => {
       <Map
         google={google}
         onClick={onMapClicked}
-        style={{
-          height: '500px',
-          width: '90vw',
-          borderRadius: '4px',
-        }}
+        containerStyle={mapStyles}
         initialCenter={center}
         zoom={zoom}>
         {Markers}

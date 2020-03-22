@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from '@material-ui/core';
+import OpenInNew from '@material-ui/icons/OpenInNew';
 import {logEvent, CATEGORY} from '../utils/analytics';
 
 const WebsiteLink = ({href, label, color}) => (
@@ -9,13 +10,13 @@ const WebsiteLink = ({href, label, color}) => (
     rel="noopener noreferrer"
     onClick={() => {
       logEvent(CATEGORY.LINK_CLICKED, href);
-    }}>{label}</Link>
+    }}>{label} <OpenInNew fontSize="inherit"/></Link>
 );
 
 WebsiteLink.defaultProps = {
   href: '',
   label: '',
-  color: 'secondary',
+  color: 'primary',
 };
 
 export default WebsiteLink;
