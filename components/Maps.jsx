@@ -3,10 +3,11 @@ import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
 import WebsiteLink from './WebsiteLink';
 // TODO: replace with API call?
 import places from '../test-data/places';
-import {Typography} from '@material-ui/core';
+import {Typography, MuiThemeProvider, useTheme} from '@material-ui/core';
 import BusinessIcon from './BusinessIcon';
 
 const Maps = ({zoom, google}) => {
+  const theme = useTheme();
   let sumLat = 0; let sumLng = 0;
 
   const [activeMarker, setActiveMarker] = useState(null);
@@ -19,6 +20,7 @@ const Maps = ({zoom, google}) => {
 
 
   const Markers = places.map((props) => {
+    console.log(props);
     const onMarkerClick = (props, marker) => {
       setActiveMarker(marker);
       setMarkerDetails(props);
@@ -55,13 +57,16 @@ const Maps = ({zoom, google}) => {
         <InfoWindow
           marker={activeMarker}
           visible={typeof activeMarker !== 'null'}>
-          <div>
-            <BusinessIcon>{markerDetails.iconType}</BusinessIcon>
+          <MuiThemeProvider theme={theme}>
+            <BusinessIcon
+              style={{alignSelf: 'center'}}
+              iconType={markerDetails.iconType} />
             <Typography>{markerDetails.name}</Typography>
             <WebsiteLink
               href={markerDetails.website}
-              label={markerDetails.website}/>
-          </div>
+              label={markerDetails.website}
+              color='primary'/>
+          </MuiThemeProvider>
         </InfoWindow>
       </Map>
       <style jsx>{`

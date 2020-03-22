@@ -19,7 +19,9 @@ const icons = {
 };
 
 const BusinessIcon = ({iconType}) => {
-  const Component = icons[iconType] ? icons[iconType] : icons[BusinessIcon.defaultProps.iconType];
+  const Component = icons[iconType] ?
+    icons[iconType] :
+    icons[BusinessIcon.defaultProps.iconType];
   return <Component />;
 };
 
