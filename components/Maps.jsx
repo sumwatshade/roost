@@ -27,7 +27,6 @@ const Maps = ({zoom, google}) => {
 
 
   const Markers = places.map((props) => {
-    console.log(props);
     const onMarkerClick = (props, marker) => {
       setActiveMarker(marker);
       setMarkerDetails(props);

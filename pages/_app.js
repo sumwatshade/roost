@@ -6,7 +6,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../config/theme';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-
+import Analytics from 'react-ga';
+import AnalyticsWrapper from '../components/AnalyticsWrapper';
 /**
  * Adds theme via Material UI theme provider
  */
@@ -28,7 +29,6 @@ export default class RoostApp extends App {
    */
   render() {
     const {Component, pageProps} = this.props;
-
     return (
       <React.Fragment>
         <Head>
@@ -38,10 +38,12 @@ export default class RoostApp extends App {
             content="minimum-scale=1, initial-scale=1, width=device-width" />
         </Head>
         <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <Nav />
-          <Component {...pageProps} />
-          <Footer />
+          <AnalyticsWrapper>
+            <CssBaseline />
+            <Nav />
+            <Component {...pageProps} />
+            <Footer />
+          </AnalyticsWrapper>
         </ThemeProvider>
         <style jsx global>{`
           main {
