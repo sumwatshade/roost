@@ -40,8 +40,14 @@ const PlaceTable = ({rows}) => {
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell><Typography>Business Name</Typography></TableCell>
-              <TableCell align="left"><Typography>Tags</Typography></TableCell>
+              <TableCell>
+                <Typography style={{fontWeight: 'inherit'}}>
+                  Business Name
+                </Typography>
+              </TableCell>
+              <TableCell>
+                <Typography style={{fontWeight: 'inherit'}}>Tags</Typography>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -50,11 +56,11 @@ const PlaceTable = ({rows}) => {
                 .map(({name, website, tags}) => (
                   <TableRow key={name}>
                     <TableCell component="th" scope="row">
-                      <Typography>
-                        {name}{ website ? (<>&nbsp;(<WebsiteLink
+                      <Typography color="secondary">
+                        { website ? (<WebsiteLink
                           href={website}
-                          color="primary"
-                          label="site" />)</>) : ''}
+                          color="secondary"
+                          label={name} />) : name}
                       </Typography>
                     </TableCell>
                     <TableCell align="left">
