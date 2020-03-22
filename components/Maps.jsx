@@ -63,14 +63,18 @@ const Maps = ({zoom, google}) => {
           marker={activeMarker}
           visible={typeof activeMarker !== 'null'}>
           <MuiThemeProvider theme={theme}>
-            <BusinessIcon
-              style={{alignSelf: 'center'}}
-              iconType={markerDetails.iconType} />
-            <Typography>{markerDetails.name}</Typography>
-            <WebsiteLink
-              href={markerDetails.website}
-              label={markerDetails.website}
-              color='primary'/>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}>
+              <BusinessIcon iconType={markerDetails.iconType} />
+              <Typography>{markerDetails.name}</Typography>
+              <WebsiteLink
+                href={markerDetails.website}
+                label={markerDetails.website}
+                color='primary'/>
+            </div>
           </MuiThemeProvider>
         </InfoWindow>
       </Map>

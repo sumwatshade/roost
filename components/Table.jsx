@@ -37,7 +37,7 @@ const PlaceTable = ({rows}) => {
   return (
     <Paper>
       <TableContainer className={classes.container}>
-        <Table aria-label="simple table">
+        <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell><Typography>Business Name</Typography></TableCell>
