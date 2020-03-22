@@ -1,12 +1,13 @@
 import React from 'react';
 
-import GoogleMapReact from 'google-map-react';
+// import GoogleMapReact from 'google-map-react';
+import {Map, GoogleApiWrapper} from 'google-maps-react';
+
 import Marker from './Marker';
 // TODO: replace with API call?
 import places from '../test-data/places';
-import {Paper} from '@material-ui/core';
 
-const Maps = ({zoom}) => {
+const Maps = ({zoom, google}) => {
   let sumLat = 0; let sumLng = 0;
 
   const Markers = places.map((props) => {
@@ -23,12 +24,12 @@ const Maps = ({zoom}) => {
 
   return (
     <div className="maps-container">
-      <GoogleMapReact
-        bootstrapURLKeys={{key: process.env.MAPS_API_KEY}}
+      <Map 
+        google={google}
         defaultCenter={center}
         defaultZoom={zoom}>
         {Markers}
-      </GoogleMapReact>
+      </Map>
       <style jsx>{`
         .maps-container {
           margin: 10px 0;
@@ -52,4 +53,6 @@ Maps.defaultProps = {
   zoom: 11,
 };
 
-export default Maps;
+export default GoogleApiWrapper({
+  apiKey: process.env.MAPS_API_KEY
+})(Maps);
