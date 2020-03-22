@@ -64,7 +64,10 @@ const SearchableTable = ({dataSet}) => {
     <>
       <form className="textfield">
         <TextField
-          placeholder="Coffee, bar, vegan..."
+          placeholder="Search local places (ex. 'coffee, bar, vegan, ...')"
+          style={{
+            width: '100%',
+          }}
           onChange={(e) => {
             setSearch(e.target.value);
           }}
