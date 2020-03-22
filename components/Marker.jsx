@@ -1,15 +1,16 @@
 import React, {useState} from 'react';
 import {motion} from 'framer-motion';
+import BusinessIcon from './BusinessIcon';
 import WebsiteLink from './WebsiteLink';
 import {Paper, Typography} from '@material-ui/core';
-const Marker = ({name, website, color, lat, lng}) => {
+const Marker = ({name, iconType, website, color, lat, lng}) => {
   const [clicked, setClicked] = useState(false);
 
   return (
     <Paper component={motion.div}
       layoutTransition
       style={{
-        minWidth: '100px',
+        minWidth: '30px',
         minHeight: '10px',
         border: '1px solid #F5F5F6',
         borderRadius: '3px',
@@ -18,18 +19,46 @@ const Marker = ({name, website, color, lat, lng}) => {
         justifyContent: 'center',
         alignItems: 'center',
       }}
-      lat={lat}
-      lng={lng}
+      position={{lat, lng}}
       onClick={() => setClicked(!clicked)}>
 
-      <Typography variant="body2">{name}</Typography>
+      <BusinessIcon iconType={iconType}></BusinessIcon>
+
+      {
+        clicked ? <Paper
+          layoutTransition
+          style={nameAndWebsiteStyle}
+          lat={lat + 10}
+          lng={lng + 30}>
+          <Typography variant="body2">{name}</Typography>
+        </Paper>:
+        ''
+      }
+
       {
         clicked && website ?
-          <WebsiteLink href={website} label="Website" color="secondary" /> :
+          <Paper
+            layoutTransition
+            style={nameAndWebsiteStyle}
+            lat={lat + 20}
+            lng={lng + 30}>
+            <WebsiteLink href={website} label="Website" color="secondary" />
+          </Paper>:
           ''
       }
     </Paper>
   );
+};
+
+const nameAndWebsiteStyle = {
+  minWidth: '125px',
+  minHeight: '10px',
+  border: '1px solid #F5F5F6',
+  borderRadius: '3px',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
 };
 
 Marker.defaultProps = {

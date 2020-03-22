@@ -5,6 +5,7 @@ import {ThemeProvider} from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../config/theme';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 /**
  * Adds theme via Material UI theme provider
@@ -38,11 +39,21 @@ export default class RoostApp extends App {
             content="minimum-scale=1, initial-scale=1, width=device-width" />
         </Head>
         <ThemeProvider theme={theme}>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
           <Nav />
           <Component {...pageProps} />
+          <Footer />
         </ThemeProvider>
+        <style jsx>{`
+          main {
+            padding: 5rem 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        `}</style>
       </React.Fragment>
     );
   }
