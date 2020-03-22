@@ -32,7 +32,6 @@ export default class RoostApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
           <meta
             name="viewport"
@@ -44,9 +43,8 @@ export default class RoostApp extends App {
           <Component {...pageProps} />
           <Footer />
         </ThemeProvider>
-        <style jsx>{`
+        <style jsx global>{`
           main {
-            padding: 5rem 0;
             flex: 1;
             display: flex;
             flex-direction: column;

@@ -7,7 +7,7 @@ import {Typography} from '@material-ui/core';
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Roost</title>
+      <title>Home - Roost</title>
     </Head>
 
     <main>

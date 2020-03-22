@@ -17,7 +17,7 @@ export default function About() {
   return (
     <div className="container">
       <Head>
-        <title>Roost</title>
+        <title>About - Roost</title>
       </Head>
       <main>
         <Typography variant="h2" color="primary">
