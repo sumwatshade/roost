@@ -19,8 +19,7 @@ const Marker = ({name, iconType, website, color, lat, lng}) => {
         justifyContent: 'center',
         alignItems: 'center',
       }}
-      lat={lat}
-      lng={lng}
+      position={{lat, lng}}
       onClick={() => setClicked(!clicked)}>
 
       <BusinessIcon iconType={iconType}></BusinessIcon>
