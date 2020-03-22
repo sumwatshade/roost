@@ -43,9 +43,8 @@ export default class RoostApp extends App {
           <Component {...pageProps} />
           <Footer />
         </ThemeProvider>
-        <style jsx>{`
+        <style jsx global>{`
           main {
-            padding: 5rem 0;
             flex: 1;
             display: flex;
             flex-direction: column;
