@@ -51,6 +51,11 @@ const Maps = ({zoom, google}) => {
       <Map
         google={google}
         onClick={onMapClicked}
+        style={{
+          height: '500px',
+          width: '90vw',
+          borderRadius: '4px',
+        }}
         initialCenter={center}
         zoom={zoom}>
         {Markers}
