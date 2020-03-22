@@ -3,8 +3,15 @@ import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
 import WebsiteLink from './WebsiteLink';
 // TODO: replace with API call?
 import places from '../test-data/places';
-import {Typography, MuiThemeProvider, useTheme} from '@material-ui/core';
+import {Typography, MuiThemeProvider, useTheme, Paper, withStyles} from '@material-ui/core';
 import BusinessIcon from './BusinessIcon';
+
+const StyledPaper = withStyles({
+  root: {
+    height: '500px',
+    width: '90vw',
+  },
+})(Paper);
 
 const Maps = ({zoom, google}) => {
   const theme = useTheme();
@@ -47,7 +54,7 @@ const Maps = ({zoom, google}) => {
   };
 
   return (
-    <div className="maps-container">
+    <StyledPaper>
       <Map
         google={google}
         onClick={onMapClicked}
@@ -74,19 +81,7 @@ const Maps = ({zoom, google}) => {
           </MuiThemeProvider>
         </InfoWindow>
       </Map>
-      <style jsx>{`
-        .maps-container {
-          margin: 10px 0;
-          height: 500px;
-          width: 90vw;      
-          box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 
-            0px 1px 1px 0px rgba(0,0,0,0.14), 
-            0px 1px 3px 0px rgba(0,0,0,0.12);
-          border-radius: 4px;    
-        }
-      `}</style>
-    </div>
-
+    </StyledPaper>
   );
 };
 
