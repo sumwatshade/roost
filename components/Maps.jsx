@@ -69,7 +69,7 @@ const Maps = ({zoom, google}) => {
           </MuiThemeProvider>
         </InfoWindow>
       </Map>
-      <style jsx>{`
+      <style jsx global>{`
         .maps-container {
           margin: 10px 0;
           height: 500px;
@@ -80,6 +80,18 @@ const Maps = ({zoom, google}) => {
           border-radius: 4px;    
         }
 
+        main {
+          padding: 0;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        footer img {
+          margin-left: 0.5rem;
+        }
       `}</style>
     </div>
 
