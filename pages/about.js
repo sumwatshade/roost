@@ -84,7 +84,7 @@ export default function About() {
               <WebsiteLink
                 label="reddit community"
                 color="primary"
-                href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"/>
+                href="https://www.reddit.com/r/COVID19positive/"/>
                 &nbsp;of people describing their experience and symptoms</li>
             </ul>
           </SpacedParagraph>
