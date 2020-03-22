@@ -1,6 +1,10 @@
 
 import ReactGA from 'react-ga';
 
+export const CATEGORY = {
+  'LINK_CLICKED': 'link-clicked',
+};
+
 /**
  * initialize Analytics
  */
