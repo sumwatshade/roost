@@ -63,7 +63,7 @@ const SearchableTable = ({dataSet}) => {
 
   return (
     <Box>
-      <Box component='form' mt={3} className="textfield">
+      <Box mt={3} className="textfield">
         <TextField
           placeholder="Search local places (ex. 'coffee, bar, vegan, ...')"
           style={{
