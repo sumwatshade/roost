@@ -3,19 +3,26 @@ import React from 'react';
 import Head from 'next/head';
 import Maps from '../components/Maps';
 import SearchableTable from '../components/SearchableTable';
-import {Typography} from '@material-ui/core';
+import {Typography, Container, withStyles} from '@material-ui/core';
+
+const CenteredTypography = withStyles({
+  root: {
+    textAlign: 'center',
+  },
+})(Typography);
+
 const Home = () => (
-  <div className="container">
+  <div>
     <Head>
       <title>Home - Roost</title>
     </Head>
 
-    <main>
-      <Typography variant="h2" color="primary">Welcome to Roost</Typography>
-      <Typography variant="subtitle1" color="secondary">Support local San Diego business through COVID-19</Typography>
+    <Container>
+      <CenteredTypography variant="h2" color="primary">Welcome to Roost</CenteredTypography>
+      <CenteredTypography variant="subtitle1" color="secondary">Support local San Diego business through COVID-19</CenteredTypography>
       <SearchableTable />
       <Maps />
-    </main>
+    </Container>
   </div>
 );
 

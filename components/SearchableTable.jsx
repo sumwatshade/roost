@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {TextField} from '@material-ui/core';
+import {TextField, Box} from '@material-ui/core';
 import Fuse from 'fuse.js'; ;
 
 import Table from './Table';
@@ -60,9 +60,10 @@ const SearchableTable = ({dataSet}) => {
       setRows(fuse.search(search).map((r) => r.item));
     }
   }, [search]);
+
   return (
     <>
-      <form className="textfield">
+      <Box component='form' mt={3} className="textfield">
         <TextField
           placeholder="Search local places (ex. 'coffee, bar, vegan, ...')"
           style={{
@@ -72,22 +73,10 @@ const SearchableTable = ({dataSet}) => {
             setSearch(e.target.value);
           }}
           color="primary"/>
-      </form>
-      <div className="search-table">
-        <Table rows={rows}/>
-      </div>
-
-      <style jsx>{`
-        .search-table {
-          margin: 10px 0;
-          width: 90vw;
-        }
-
-        .textfield {
-          margin: 10px 0;
-          width: 90vw;
-        }
-      `}</style>
+      </Box>
+      <Box mt={3}>
+        <Table rows={rows} />
+      </Box>
     </>
   );
 };
