@@ -9,11 +9,11 @@ import {
   useTheme,
   Paper,
   withStyles,
+  Box,
 } from '@material-ui/core'; import BusinessIcon from './BusinessIcon';
 
 const mapStyles = {
-  height: '500px',
-  width: '90vw',
+  height: '80vh',
   borderRadius: '4px',
 };
 
@@ -61,34 +61,40 @@ const Maps = ({zoom, google}) => {
   };
 
   return (
-    <StyledPaper>
-      <Map
-        google={google}
-        onClick={onMapClicked}
-        containerStyle={mapStyles}
-        initialCenter={center}
-        zoom={zoom}>
-        {Markers}
-        <InfoWindow
-          marker={activeMarker}
-          visible={typeof activeMarker !== 'null'}>
-          <MuiThemeProvider theme={theme}>
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}>
-              <BusinessIcon iconType={markerDetails.iconType} />
-              <Typography>{markerDetails.name}</Typography>
-              <WebsiteLink
-                href={markerDetails.website}
-                label={markerDetails.website}
-                color='primary'/>
-            </div>
-          </MuiThemeProvider>
-        </InfoWindow>
-      </Map>
-    </StyledPaper>
+    <Box mt={3}>
+      <StyledPaper elevation={3}>
+        <Map
+          google={google}
+          onClick={onMapClicked}
+          containerStyle={{
+            position: 'relative',
+            ...mapStyles,
+          }}
+          style={mapStyles}
+          initialCenter={center}
+          zoom={zoom}>
+          {Markers}
+          <InfoWindow
+            marker={activeMarker}
+            visible={typeof activeMarker !== 'null'}>
+            <MuiThemeProvider theme={theme}>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}>
+                <BusinessIcon iconType={markerDetails.iconType} />
+                <Typography>{markerDetails.name}</Typography>
+                <WebsiteLink
+                  href={markerDetails.website}
+                  label={markerDetails.website}
+                  color='primary'/>
+              </div>
+            </MuiThemeProvider>
+          </InfoWindow>
+        </Map>
+      </StyledPaper>
+    </Box>
   );
 };
 
