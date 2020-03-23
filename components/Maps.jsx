@@ -9,6 +9,7 @@ import {
   useTheme,
   Paper,
   withStyles,
+  CircularProgress,
   Box,
 } from '@material-ui/core'; import BusinessIcon from './BusinessIcon';
 
@@ -18,8 +19,17 @@ const mapStyles = {
 };
 
 const StyledPaper = withStyles({
-  root: mapStyles,
+  root: {
+    display: 'flex',
+    ...mapStyles,
+  },
 })(Paper);
+
+const LoadingComponent = () => (
+  <StyledPaper elevation={3}>
+    <Box margin='auto'><CircularProgress size={80} thickness={4}/></Box>
+  </StyledPaper>
+);
 
 const Maps = ({zoom, google}) => {
   const theme = useTheme();
@@ -103,4 +113,5 @@ Maps.defaultProps = {
 // eslint-disable-next-line new-cap
 export default GoogleApiWrapper({
   apiKey: process.env.MAPS_API_KEY,
+  LoadingContainer: LoadingComponent,
 })(Maps);
