@@ -1,5 +1,5 @@
 import React from 'react';
-import {Paper, Typography, withStyles} from '@material-ui/core';
+import {Paper, Typography, withStyles, Container, Box} from '@material-ui/core';
 import Head from 'next/head';
 
 import WebsiteLink from '../components/WebsiteLink';
@@ -10,41 +10,44 @@ const SpacedParagraph = withStyles({
   },
 })(Typography);
 
+const CenteredTypography = withStyles({
+  root: {
+    textAlign: 'center',
+  },
+})(Typography);
+
 /**
  * @return {JSX} about page
  */
 export default function About() {
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>About - Roost</title>
       </Head>
-      <main>
-        <Typography variant="h2" color="primary">
-            Why this site exists
-        </Typography>
+      <Container>
+        <CenteredTypography variant="h2" color="primary">
+          Why this site exists
+        </CenteredTypography>
 
-        <Paper style={{
-          width: '90vw',
-          padding: '20px',
-          margin: '20px 0',
-        }}>
+        <Box component={Paper} p={3} mt={3}>
 
           <Typography variant="h4" color="primary">
             Mission Statement
           </Typography>
-          <SpacedParagraph variant="body1" color="secondary">
+
+          <Box my={2}><Typography variant="body1" color="secondary">
             The Coronavirus has crippled the economy in the United States
             within a matter of weeks. Small businesses (and the people they
             employ) have in particular suffered immediately. As a lovely
             and empathetic community, I am reaching out to my fellow
             San Diegans to help our neighbors in their time of need.
-          </SpacedParagraph>
+          </Typography></Box>
 
           <Typography variant="h4" color="primary">
               What we can do</Typography>
 
-          <SpacedParagraph variant="body1" color="secondary">
+          <Box my={2}><Typography component='div' color="secondary">
             <ul>
               <li>
                 <strong>Support local businesses</strong>: Although many shops
@@ -64,11 +67,12 @@ export default function About() {
                 businesses can open their doors to the public.
               </li>
             </ul>
-          </SpacedParagraph>
+          </Typography></Box>
 
           <Typography variant="h4" color="primary">
               COVID-19 Resources</Typography>
-          <SpacedParagraph variant="body1" color="secondary">
+
+          <Box my={2}><Typography component='div' color="secondary">
             <ul>
               <li><WebsiteLink
                 label="CDC COVID-19 Fact Sheet"
@@ -87,11 +91,12 @@ export default function About() {
                 href="https://www.reddit.com/r/COVID19positive/"/>
                 &nbsp;of people describing their experience and symptoms</li>
             </ul>
-          </SpacedParagraph>
+          </Typography></Box>
 
           <Typography variant="h4" color="primary">
               Keeping busy during social distancing</Typography>
-          <SpacedParagraph variant="body1" color="secondary">
+
+          <Box my={2}><Typography component='div' color="secondary">
               Is cabin fever beginning to set in? Here are a few things to help
               keep the mind at ease!
             <ul>
@@ -110,10 +115,10 @@ export default function About() {
                   color="primary"
                   href="https://ocw.mit.edu/index.htm" />.</li>
             </ul>
-          </SpacedParagraph>
+          </Typography></Box>
 
-        </Paper>
-      </main>
+        </Box>
+      </Container>
     </div>
   );
 }
