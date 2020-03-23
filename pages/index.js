@@ -3,13 +3,8 @@ import React from 'react';
 import Head from 'next/head';
 import Maps from '../components/Maps';
 import SearchableTable from '../components/SearchableTable';
-import {Typography, Container, withStyles, useTheme, Box, useMediaQuery} from '@material-ui/core';
-
-const CenteredTypography = withStyles({
-  root: {
-    textAlign: 'center',
-  },
-})(Typography);
+import {Container, useTheme, Box, useMediaQuery} from '@material-ui/core';
+import CenteredTypography from '../components/CenteredTypography';
 
 const Home = () => {
   const theme = useTheme();

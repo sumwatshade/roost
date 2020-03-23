@@ -1,20 +1,9 @@
 import React from 'react';
-import {Paper, Typography, withStyles, Container, Box} from '@material-ui/core';
+import {Paper, Typography, Container, Box} from '@material-ui/core';
 import Head from 'next/head';
+import CenteredTypography from '../components/CenteredTypography';
 
 import WebsiteLink from '../components/WebsiteLink';
-
-const SpacedParagraph = withStyles({
-  root: {
-    margin: '20px 0',
-  },
-})(Typography);
-
-const CenteredTypography = withStyles({
-  root: {
-    textAlign: 'center',
-  },
-})(Typography);
 
 /**
  * @return {JSX} about page
