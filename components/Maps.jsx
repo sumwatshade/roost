@@ -9,17 +9,27 @@ import {
   useTheme,
   Paper,
   withStyles,
+  CircularProgress,
   Box,
 } from '@material-ui/core'; import BusinessIcon from './BusinessIcon';
 
 const mapStyles = {
-  height: '80vh',
+  height: '500px',
   borderRadius: '4px',
 };
 
 const StyledPaper = withStyles({
-  root: mapStyles,
+  root: {
+    display: 'flex',
+    ...mapStyles,
+  },
 })(Paper);
+
+const LoadingComponent = () => (
+  <StyledPaper elevation={3}>
+    <Box margin='auto'><CircularProgress size={80} thickness={4}/></Box>
+  </StyledPaper>
+);
 
 const Maps = ({zoom, google}) => {
   const theme = useTheme();
@@ -61,40 +71,38 @@ const Maps = ({zoom, google}) => {
   };
 
   return (
-    <Box mt={3}>
-      <StyledPaper elevation={3}>
-        <Map
-          google={google}
-          onClick={onMapClicked}
-          containerStyle={{
-            position: 'relative',
-            ...mapStyles,
-          }}
-          style={mapStyles}
-          initialCenter={center}
-          zoom={zoom}>
-          {Markers}
-          <InfoWindow
-            marker={activeMarker}
-            visible={typeof activeMarker !== 'null'}>
-            <MuiThemeProvider theme={theme}>
-              <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-              }}>
-                <BusinessIcon iconType={markerDetails.iconType} />
-                <Typography>{markerDetails.name}</Typography>
-                <WebsiteLink
-                  href={markerDetails.website}
-                  label={markerDetails.website}
-                  color='primary'/>
-              </div>
-            </MuiThemeProvider>
-          </InfoWindow>
-        </Map>
-      </StyledPaper>
-    </Box>
+    <StyledPaper elevation={3}>
+      <Map
+        google={google}
+        onClick={onMapClicked}
+        containerStyle={{
+          position: 'relative',
+          ...mapStyles,
+        }}
+        style={mapStyles}
+        initialCenter={center}
+        zoom={zoom}>
+        {Markers}
+        <InfoWindow
+          marker={activeMarker}
+          visible={typeof activeMarker !== 'null'}>
+          <MuiThemeProvider theme={theme}>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+            }}>
+              <BusinessIcon iconType={markerDetails.iconType} />
+              <Typography>{markerDetails.name}</Typography>
+              <WebsiteLink
+                href={markerDetails.website}
+                label={markerDetails.website}
+                color='primary'/>
+            </div>
+          </MuiThemeProvider>
+        </InfoWindow>
+      </Map>
+    </StyledPaper>
   );
 };
 
@@ -105,4 +113,5 @@ Maps.defaultProps = {
 // eslint-disable-next-line new-cap
 export default GoogleApiWrapper({
   apiKey: process.env.MAPS_API_KEY,
+  LoadingContainer: LoadingComponent,
 })(Maps);

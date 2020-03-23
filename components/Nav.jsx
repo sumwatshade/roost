@@ -1,6 +1,6 @@
 import React from 'react';
 import NextMuiLink from './NextMuiLink';
-import {Typography} from '@material-ui/core';
+import {Typography, AppBar, Toolbar, makeStyles} from '@material-ui/core';
 
 const routes = [{
   name: 'Home',
@@ -10,14 +10,27 @@ const routes = [{
   path: '/about',
 }];
 
+const useStyles = makeStyles(({spacing}) => ({
+  link: {
+    marginRight: spacing(2),
+    color: 'white',
+  },
+}));
+
 const Nav = () => {
+  const classes = useStyles();
+
   return (
-    <nav className="navigation">
-      {routes.map(({name, path}) => {
-        return (<NextMuiLink key={name} href={path}>
-          <Typography>{name}</Typography>
-        </NextMuiLink>);
-      })}
+    <AppBar position='static' component='nav'>
+      <Toolbar>
+        {routes.map(({name, path}) => {
+          return (<NextMuiLink key={name} href={path} color='secondary'>
+            <Typography className={classes.link} variant="h6">
+              {name}
+            </Typography>
+          </NextMuiLink>);
+        })}
+      </Toolbar>
       <style jsx>{`
         .navigation {
             display: flex;
@@ -38,7 +51,7 @@ const Nav = () => {
           }
         }
       `}</style>
-    </nav>
+    </AppBar>
   );
 };
 
