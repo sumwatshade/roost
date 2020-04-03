@@ -1,7 +1,6 @@
 import React from 'react';
 import NextMuiLink from './NextMuiLink';
 import {Typography, AppBar, Toolbar, makeStyles} from '@material-ui/core';
-import Logo from './Logo';
 
 const routes = [{
   name: 'Home',
@@ -24,7 +23,6 @@ const Nav = () => {
   return (
     <AppBar position='static' component='nav'>
       <Toolbar>
-        <Logo size="40px" />
         {routes.map(({name, path}) => {
           return (<NextMuiLink key={name} href={path} color='secondary'>
             <Typography className={classes.link} variant="h6">
