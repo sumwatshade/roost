@@ -9,9 +9,11 @@ module.exports = {
     '!**/node_modules/**',
     '!**/vendor/**',
     '!**/__snapshots__/**',
-    // Ignore table prior to rewrite
+    // TODO: Table Rewrite
     '!**/Table.jsx',
     '!**/SearchableTable.jsx',
+    // TODO: Map rework
+    '!**/Maps.jsx',
   ],
   coverageThreshold: {
     'global': {

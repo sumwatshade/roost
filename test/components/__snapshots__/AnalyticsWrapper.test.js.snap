@@ -11,9 +11,3 @@ exports[`Analytics Wrapper Component only logs page view if analytics already de
   Test
 </DocumentFragment>
 `;
-
-exports[`Analytics Wrapper Component renders in default state 1`] = `
-<DocumentFragment>
-  Test
-</DocumentFragment>
-`;
