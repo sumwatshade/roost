@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Analytics Wrapper Component initializes analytics and logs page view 1`] = `
+<DocumentFragment>
+  Test
+</DocumentFragment>
+`;
+
+exports[`Analytics Wrapper Component only logs page view if analytics already defined 1`] = `
+<DocumentFragment>
+  Test
+</DocumentFragment>
+`;
+
+exports[`Analytics Wrapper Component renders in default state 1`] = `
+<DocumentFragment>
+  Test
+</DocumentFragment>
+`;
