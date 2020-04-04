@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component renders in default state 1`] = `
+<DocumentFragment>
+  <footer
+    class="MuiBox-root MuiBox-root-3 Styled(MuiBox)-root-1"
+    classes="[object Object]"
+  >
+    <p
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-4 MuiTypography-body1"
+    >
+      Questions? Business Request? Send us a message at 
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+        href="mailto:roost.sb@gmail.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        roost.sb@gmail.com 
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+          />
+        </svg>
+      </a>
+    </p>
+    <p
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-4 MuiTypography-body1"
+    >
+      Click 
+      <a
+        class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+        href="https://covid19responsefund.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        here 
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+          focusable="false"
+          role="presentation"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+          />
+        </svg>
+      </a>
+       to donate to the WHO COVID-19 Response fund!
+    </p>
+    <br />
+    <div
+      style="display: flex; flex-direction: column; align-items: center;"
+    >
+      <svg
+        data-name="Layer 1"
+        id="Layer_1"
+        preserveAspectRatio="true"
+        viewBox="0 0 109.5 110.88"
+        width="40px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <style>
+            
+                .cls-1 {
+                    fill:#ffefc1;
+                }
+                
+                .cls-1,.cls-2,.cls-3 {
+                    stroke:#603813;
+                    stroke-miterlimit:10;
+                }
+                
+                .cls-2 {
+                    fill:#a67c52;
+                }
+                
+                .cls-3 {
+                    fill:none;
+                }
+          </style>
+        </defs>
+        <ellipse
+          class="cls-1"
+          cx="57.07"
+          cy="47.5"
+          rx="31"
+          ry="47"
+        />
+        <polyline
+          class="cls-2"
+          points="72.07 69.5 0.07 60.5 14.07 62.5 35.07 100.5 42.07 95.5 98.07 94.5 80.07 94.5 101.07 44.5 109.07 37.5 24.07 110.5"
+        />
+        <line
+          class="cls-3"
+          x1="94.07"
+          x2="109.07"
+          y1="50.5"
+          y2="25.5"
+        />
+      </svg>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
