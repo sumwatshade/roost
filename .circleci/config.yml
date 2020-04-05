@@ -37,7 +37,11 @@ jobs: # a collection of steps
             - ./node_modules
       - run: 
           name: Run linting
-          command: yarn lint
+          command: yarn lint --format junit -o reports/junit/js-lint-results.xml
+      - store_test_results:
+          path: reports/junit
+      - store_artifacts:
+          path: reports/junit
   unit_test: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/roost # directory where steps will run
     docker: # run the steps with Docker
@@ -59,11 +63,13 @@ jobs: # a collection of steps
           command: mkdir ~/roost/reports
       - run:
           name: Run tests with JUnit as reporter
-          command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit -o reports/js-lint-results.xml
+          command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"      
       - store_test_results:
-          path: reports/
+          path: reports/junit
       - store_artifacts:
-          path: reports/
+          path: reports/junit
 workflows:
   version: 2
   pr_ci:
