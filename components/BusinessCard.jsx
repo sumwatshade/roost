@@ -39,7 +39,7 @@ const BusinessCard = ({businessInfo}) => {
 };
 
 BusinessCard.propTypes = {
-  businessInfo: BusinessInfoType,
+  businessInfo: BusinessInfoType.isRequired,
 };
 
 export default BusinessCard;

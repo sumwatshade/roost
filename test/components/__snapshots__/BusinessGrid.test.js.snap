@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BusinessGrid Component renders in default collapsed state 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+    >
+      <div
+        class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-105 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <h4
+          class="MuiTypography-root MuiTypography-h4"
+        >
+          Heartwork
+        </h4>
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          <a
+            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+            href="https://heartwork.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Website 
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+              />
+            </svg>
+          </a>
+        </p>
+        <div
+          class="MuiCollapse-container MuiBox-root MuiBox-root-180 MuiCollapse-hidden"
+          style="min-height: 0px;"
+        >
+          <div
+            class="MuiCollapse-wrapper"
+          >
+            <div
+              class="MuiCollapse-wrapperInner"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1"
+              >
+                Tags: coffee, test
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-186 MuiButton-contained MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Show more...
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

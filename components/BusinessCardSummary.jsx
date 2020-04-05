@@ -25,3 +25,5 @@ const CardSummary = ({businessInfo}) => {
 CardSummary.propTypes = {
   businessInfo: BusinessInfoType.isRequired,
 };
+
+export default CardSummary;
