@@ -6,7 +6,7 @@ exports[`BusinessGrid Component renders in default collapsed state 1`] = `
     class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 MuiGrid-grid-xl-2"
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3"
     >
       <div
         class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-105 MuiPaper-outlined MuiPaper-rounded"

@@ -47,7 +47,7 @@ const SearchableTable = ({dataSet}) => {
   const [fuse, setFuse] = useState(null);
   const [rows, setRows] = useState(dataSet);
   const [search, setSearch] = useState('');
-  const debouncedSearchTerm = useDebounce(search, 500);
+  const debouncedSearchTerm = useDebounce(search, 300);
 
   useEffect(() => {
     const data = dataSet.sort(() => Math.random() - 0.5);

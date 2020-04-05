@@ -8,7 +8,7 @@ const BusinessGrid = ({places}) => {
   return (
     <Grid container spacing={1}>
       {places.map((businessInfo, index) => (
-        <Grid key={index} item xs={12} sm={6} md={4} lg={3} xl={2}>
+        <Grid key={index} item xs={12} sm={6} md={4} lg={3}>
           <BusinessCard businessInfo={businessInfo} />
         </Grid>
       ))}
