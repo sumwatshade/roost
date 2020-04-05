@@ -3,6 +3,7 @@ import React from 'react';
 import {BusinessInfoType} from '../test-data/data-types';
 import {Card, Box, Typography, Button, withStyles, Collapse} from '@material-ui/core';
 import {useState} from 'react';
+import WebsiteLink from './WebsiteLink';
 
 const ShowMoreButton = withStyles(({spacing}) => ({
   root: {
@@ -16,7 +17,7 @@ const CardDetail = ({businessInfo, expanded}) => {
   const {tags} = businessInfo;
   return (
     <Box component={Collapse} in={expanded} m={1}>
-      <Typography>Tags: {tags.join(', ')}</Typography>
+      <Typography>Tags: {tags ? tags.join(', ') : ''}</Typography>
     </Box>
   );
 };
@@ -27,7 +28,14 @@ const CardSummary = ({businessInfo}) => {
   return (
     <>
       <Typography variant="h4">{name}</Typography>
-      <Typography>{website}</Typography>
+      <Typography>
+        {website ? (
+          <WebsiteLink
+            href={website}
+            color="primary"
+            label='Website' />
+        ) : ''}
+      </Typography>
     </>
   );
 };
@@ -40,15 +48,14 @@ const BusinessCard = ({businessInfo}) => {
   return (
     <Box component={Card} m={3} p={1}
       variant="outlined"
-      justifyContent="center"
+      justifyContent="space-evenly"
       alignItems="center"
       display="flex"
-      maxWidth="300px"
+      minHeight="200px"
       flexDirection="column">
       <CardSummary businessInfo={businessInfo} />
       <CardDetail expanded={isExpanded} businessInfo={businessInfo}/>
       <ShowMoreButton
-        mt={2}
         color="primary"
         variant="contained"
         onClick={() => setIsExpanded(!isExpanded)}>{buttonText}</ShowMoreButton>

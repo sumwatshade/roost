@@ -1,12 +1,12 @@
 import React from 'react';
 
 import places from '../test-data/places.json';
-import BusinessCard from '../components/BusinessCard';
+import BusinessGrid from '../components/BusinessGrid';
 
 const Card = () => {
   return (
     <div>
-      <BusinessCard businessInfo={places[0]} />
+      <BusinessGrid places={places} />
     </div>
   );
 };
