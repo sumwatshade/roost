@@ -18,7 +18,7 @@ jobs: # a collection of steps
             - ./node_modules
       - run: 
           name: Build with Next
-          command: next build
+          command: yarn build
   lint: # runs not using Workflows must have a `build` job as entry point
     working_directory: ~/roost # directory where steps will run
     docker: # run the steps with Docker
