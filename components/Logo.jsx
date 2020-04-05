@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -45,3 +46,4 @@ Logo.defaultProps = {
   size: '200px',
 };
 export default Logo;
+/* eslint-enable max-len */

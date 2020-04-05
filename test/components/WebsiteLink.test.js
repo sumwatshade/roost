@@ -25,6 +25,7 @@ describe('WebsiteLink Component', () => {
     expect(asFragment()).toMatchSnapshot();
 
     fireEvent.click(getByText(/click this/));
+    expect(analytics.logEvent).toHaveBeenCalledTimes(1);
   });
 
   test('renders in default state', () => {

@@ -28,7 +28,10 @@ describe('BusinessIcon Component', () => {
   });
 
   test('renders LocalConvenienceStoreIcon', () => {
-    const {asFragment} = render(<BusinessIcon iconType="LocalConvenienceStoreIcon"/>);
+    const {asFragment} = render(
+        <BusinessIcon
+          iconType="LocalConvenienceStoreIcon"/>,
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });

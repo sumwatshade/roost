@@ -1,3 +1,3 @@
 module.exports = {
-  'pre-commit': 'lint-staged',
+  'pre-commit': ['lint-staged'],
 };
