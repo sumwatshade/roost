@@ -23,4 +23,5 @@ module.exports = {
       'statements': -10,
     },
   },
+  reporters: ['default', 'jest-junit'],
 };
