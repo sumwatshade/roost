@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {TextField, Box} from '@material-ui/core';
 import Fuse from 'fuse.js'; ;
 
-import Table from './Table';
+import BusinessGrid from './BusinessGrid';
 
 import places from '../test-data/places';
 
@@ -75,7 +75,7 @@ const SearchableTable = ({dataSet}) => {
           color="primary"/>
       </Box>
       <Box mt={3}>
-        <Table rows={rows} />
+        <BusinessGrid places={rows} />
       </Box>
     </Box>
   );

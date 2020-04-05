@@ -17,7 +17,9 @@ const CardDetail = ({businessInfo, expanded}) => {
   const {tags} = businessInfo;
   return (
     <Box component={Collapse} in={expanded} m={1}>
-      <Typography>Tags: {tags ? tags.join(', ') : ''}</Typography>
+      {tags ? (
+        <Typography>Tags: {tags.join(', ')}</Typography>
+        ) : 'No details yet...'}
     </Box>
   );
 };
