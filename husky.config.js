@@ -1,4 +1,6 @@
 module.exports = {
-  'pre-commit': 'lint-staged',
-  'pre-push': 'yarn test',
+  hooks: {
+    'pre-commit': 'lint-staged',
+    'pre-push': 'yarn test',
+  },
 };
