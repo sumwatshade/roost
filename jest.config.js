@@ -23,6 +23,7 @@ module.exports = {
       'statements': -10,
     },
   },
+  coverageDirectory: 'reports/coverage',
   reporters: ['default',
     [
       'jest-junit', {

@@ -46,7 +46,7 @@ jobs: # a collection of steps
       - store_test_results:
           path: reports/junit
       - store_artifacts:
-          path: reports/junit
+          path: reports/
 workflows:
   version: 2
   pr_ci:
