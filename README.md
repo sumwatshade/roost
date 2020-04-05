@@ -1,33 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Roost
 
-## Getting Started
+Welcome to Roost! This is an open-source website dedicated to supporting local businesses during difficult times. We aim to provide consumers with a quick-and-easy method of utilizing (or otherwise supporting) local services. 
 
-First, run the development server:
+## Developer Quick Start
+
+### Before you start developing...
+
+- Make sure that you have [Yarn](https://classic.yarnpkg.com/en/docs/install/) installed
+
+- Our Google Maps component will require an API key, exported as environment variable `MAPS_API_KEY`. Please ensure that you have [grabbed a personal api key](https://developers.google.com/maps/documentation/javascript/get-api-key) from Google for personal development.
+
+### Local Development
+
+- Install local dependencies with
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+- ensure that your API key is exposed
+
+```
+> echo $MAPS_API_KEY
+XXXX-XXXX-XXXX
+```
+
+- run the local server with
+
+```
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on ZEIT Now
-
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
-Powered by [Yarn](https://yarnpkg.com/), [Material UI](https://material-ui.com/), and [React](https://reactjs.org/)
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
