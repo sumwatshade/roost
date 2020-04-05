@@ -63,9 +63,9 @@ jobs: # a collection of steps
           environment:
             JEST_JUNIT_OUTPUT_DIR: "~/roost/reports/js-test-results.xml"
       - store_test_results:
-          path: reports/
+          path: ~/roost/reports/
       - store_artifacts:
-          path: reports/
+          path: ~/roost/reports/
 workflows:
   version: 2
   pr_ci:
