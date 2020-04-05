@@ -30,11 +30,11 @@ const Footer = () => {
       </CenteredTypography>
 
       <br />
-      
+
       <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
       }}>
         <Logo size="40px" />
       </div>

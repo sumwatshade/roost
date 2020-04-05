@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -7,7 +8,7 @@ const Logo = ({size}) => {
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 109.5 110.88"
-      preserveAspectRatio
+      preserveAspectRatio="true"
       width={size}>
       <defs>
         <style>{`
@@ -45,3 +46,4 @@ Logo.defaultProps = {
   size: '200px',
 };
 export default Logo;
+/* eslint-enable max-len */

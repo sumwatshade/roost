@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Maps Component renders in default state 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-1 MuiPaper-elevation3 MuiPaper-rounded"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-31"
+    >
+      <div
+        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+        role="progressbar"
+        style="width: 80px; height: 80px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Maps Component rerender to change zoom 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-44 MuiPaper-elevation3 MuiPaper-rounded"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-74"
+    >
+      <div
+        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+        role="progressbar"
+        style="width: 80px; height: 80px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Maps Component rerender to change zoom 2`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-44 MuiPaper-elevation3 MuiPaper-rounded"
+  >
+    <div
+      class="MuiBox-root MuiBox-root-74"
+    >
+      <div
+        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+        role="progressbar"
+        style="width: 80px; height: 80px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="20"
+            stroke-width="4"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

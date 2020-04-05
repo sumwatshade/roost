@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NextMuiLink Component renders in default state 1`] = `
+<DocumentFragment>
+  <a
+    href="/test"
+  />
+</DocumentFragment>
+`;
+
+exports[`NextMuiLink Component renders in naked state 1`] = `
+<DocumentFragment>
+  <a
+    href="/test"
+  />
+</DocumentFragment>
+`;
+
+exports[`NextMuiLink Component renders with href object 1`] = `
+<DocumentFragment>
+  <a
+    href="/test"
+  />
+</DocumentFragment>
+`;

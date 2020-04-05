@@ -6,7 +6,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../config/theme';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import Analytics from 'react-ga';
 import AnalyticsWrapper from '../components/AnalyticsWrapper';
 /**
  * Adds theme via Material UI theme provider
