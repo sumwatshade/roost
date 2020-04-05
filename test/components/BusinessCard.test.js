@@ -14,13 +14,15 @@ describe('BusinessCard Component', () => {
     };
   });
   test('renders in default state', () => {
-    const {asFragment} = render(<BusinessCard businessInfo={businessInfo}/>);
+    const {asFragment} = render(<BusinessCard
+      businessInfo={businessInfo}/>);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   test('click to expand', () => {
-    const {asFragment, getByText} = render(<BusinessCard businessInfo={businessInfo} />);
+    const {asFragment, getByText} = render(<BusinessCard
+      businessInfo={businessInfo} />);
 
     expect(asFragment()).toMatchSnapshot();
 
