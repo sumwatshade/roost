@@ -60,12 +60,14 @@ jobs: # a collection of steps
             - ./node_modules
       - run:
           name: Make reports directory
-          command: mkdir ~/roost/reports
+          command: | 
+            mkdir ~/roost/reports
+            mkdir ~/roost/reports/junit
       - run:
           name: Run tests with JUnit as reporter
           command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit
           environment:
-            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"      
+            JEST_JUNIT_OUTPUT: "~/roost/reports/junit/js-test-results.xml"      
       - store_test_results:
           path: reports/junit
       - store_artifacts:
