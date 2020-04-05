@@ -1,9 +1,11 @@
 import React from 'react';
 
 import {BusinessInfoType} from '../test-data/data-types';
-import {Card, Box, Typography, Button, withStyles, Collapse} from '@material-ui/core';
+import {Card, Box, Button, withStyles} from '@material-ui/core';
 import {useState} from 'react';
-import WebsiteLink from './WebsiteLink';
+
+import BusinessCardDetail from './BusinessCardDetail';
+import BusinessCardSummary from './BusinessCardSummary';
 
 const ShowMoreButton = withStyles(({spacing}) => ({
   root: {
@@ -12,35 +14,6 @@ const ShowMoreButton = withStyles(({spacing}) => ({
     marginBottom: spacing(2),
   },
 }))(Button);
-
-const CardDetail = ({businessInfo, expanded}) => {
-  const {tags} = businessInfo;
-  return (
-    <Box component={Collapse} in={expanded} m={1}>
-      {tags ? (
-        <Typography>Tags: {tags.join(', ')}</Typography>
-        ) : 'No details yet...'}
-    </Box>
-  );
-};
-
-const CardSummary = ({businessInfo}) => {
-  const {name, website} = businessInfo;
-
-  return (
-    <>
-      <Typography variant="h4">{name}</Typography>
-      <Typography>
-        {website ? (
-          <WebsiteLink
-            href={website}
-            color="primary"
-            label='Website' />
-        ) : ''}
-      </Typography>
-    </>
-  );
-};
 
 const BusinessCard = ({businessInfo}) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -55,8 +28,8 @@ const BusinessCard = ({businessInfo}) => {
       display="flex"
       minHeight="200px"
       flexDirection="column">
-      <CardSummary businessInfo={businessInfo} />
-      <CardDetail expanded={isExpanded} businessInfo={businessInfo}/>
+      <BusinessCardSummary businessInfo={businessInfo} />
+      <BusinessCardDetail expanded={isExpanded} businessInfo={businessInfo}/>
       <ShowMoreButton
         color="primary"
         variant="contained"
