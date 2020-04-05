@@ -26,4 +26,4 @@ yarn-error.log*
 
 set-env.sh
 
-junit.xml
+reports/
