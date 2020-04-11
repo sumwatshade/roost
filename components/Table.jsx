@@ -11,6 +11,7 @@ import {
   makeStyles,
   Typography,
 } from '@material-ui/core';
+import { PlaceContext } from '../providers/PlaceProvider';
 
 import WebsiteLink from './WebsiteLink';
 
@@ -24,6 +25,7 @@ const useStyles = makeStyles({
 const PlaceTable = ({rows}) => {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const context = React.useContext(PlaceContext);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -33,6 +35,11 @@ const PlaceTable = ({rows}) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+
+  const onTableRowClick = (row) => {
+    context.setData(row);
+  }
+
   const classes = useStyles();
   return (
     <Paper>
@@ -53,23 +60,30 @@ const PlaceTable = ({rows}) => {
           <TableBody>
             {rows
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                .map(({name, website, tags}) => (
-                  <TableRow key={name}>
-                    <TableCell component="th" scope="row">
-                      <Typography color="secondary">
-                        { website ? (<WebsiteLink
-                          href={website}
-                          color="secondary"
-                          label={name} />) : name}
-                      </Typography>
-                    </TableCell>
-                    <TableCell align="left">
-                      <Typography>
-                        {tags && tags.length ? tags.join(', ') : ''}
-                      </Typography>
-                    </TableCell>
-                  </TableRow>
-                ))}
+                .map((row) => {
+                  const { name, website, tags } = row;
+                  return (
+                    <TableRow 
+                      key={name} 
+                      onClick={() => onTableRowClick(row)} 
+                      selected={context.data.name === name}
+                    >
+                      <TableCell component="th" scope="row">
+                        <Typography color="secondary">
+                          { website ? (<WebsiteLink
+                            href={website}
+                            color="secondary"
+                            label={name} />) : name}
+                        </Typography>
+                      </TableCell>
+                      <TableCell align="left">
+                        <Typography>
+                          {tags && tags.length ? tags.join(', ') : ''}
+                        </Typography>
+                      </TableCell>
+                    </TableRow>
+                  );
+                })}
           </TableBody>
         </Table>
       </TableContainer>

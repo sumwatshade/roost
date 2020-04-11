@@ -1,17 +1,17 @@
 import React, {useState} from 'react';
-import {Map, GoogleApiWrapper, Marker, InfoWindow} from 'google-maps-react';
-import WebsiteLink from './WebsiteLink';
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 // TODO: replace with API call?
 import places from '../test-data/places';
 import {
-  Typography,
-  MuiThemeProvider,
   useTheme,
   Paper,
   withStyles,
   CircularProgress,
   Box,
-} from '@material-ui/core'; import BusinessIcon from './BusinessIcon';
+} from '@material-ui/core'; 
+import SelectedMarkerInfo from './SelectedMarkerInfo';
+import WebsiteLink from './WebsiteLink';
+import BusinessIcon from './BusinessIcon';
 
 const mapStyles = {
   height: '500px',
@@ -32,17 +32,14 @@ const LoadingComponent = () => (
 );
 
 const Maps = ({zoom, google}) => {
-  const theme = useTheme();
   let sumLat = 0; let sumLng = 0;
 
   const [activeMarker, setActiveMarker] = useState(null);
   const [markerDetails, setMarkerDetails] = useState({});
 
-
   const onMapClicked = () => {
     setActiveMarker(null);
   };
-
 
   const Markers = places.map((props) => {
     const onMarkerClick = (props, marker) => {
@@ -83,24 +80,7 @@ const Maps = ({zoom, google}) => {
         initialCenter={center}
         zoom={zoom}>
         {Markers}
-        <InfoWindow
-          marker={activeMarker}
-          visible={typeof activeMarker !== 'null'}>
-          <MuiThemeProvider theme={theme}>
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}>
-              <BusinessIcon iconType={markerDetails.iconType} />
-              <Typography>{markerDetails.name}</Typography>
-              <WebsiteLink
-                href={markerDetails.website}
-                label={markerDetails.website}
-                color='primary'/>
-            </div>
-          </MuiThemeProvider>
-        </InfoWindow>
+        <SelectedMarkerInfo activeMarker={activeMarker} markerDetails={markerDetails} />
       </Map>
     </StyledPaper>
   );
