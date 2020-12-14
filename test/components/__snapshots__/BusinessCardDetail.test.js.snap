@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BusinessCardDetail Component handles empty tags gracefully 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiCollapse-container MuiBox-root MuiBox-root-39 MuiCollapse-hidden"
+    style="min-height: 0px;"
+  >
+    <div
+      class="MuiCollapse-wrapper"
+    >
+      <div
+        class="MuiCollapse-wrapperInner"
+      >
+        No details yet...
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BusinessCardDetail Component renders in default collapsed state 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiCollapse-container MuiBox-root MuiBox-root-2 MuiCollapse-hidden"
+    style="min-height: 0px;"
+  >
+    <div
+      class="MuiCollapse-wrapper"
+    >
+      <div
+        class="MuiCollapse-wrapperInner"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1"
+        >
+          Tags: coffee, test
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

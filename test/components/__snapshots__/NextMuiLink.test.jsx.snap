@@ -4,7 +4,9 @@ exports[`NextMuiLink Component renders in default state 1`] = `
 <DocumentFragment>
   <a
     href="/test"
-  />
+  >
+    Test
+  </a>
 </DocumentFragment>
 `;
 
@@ -12,7 +14,9 @@ exports[`NextMuiLink Component renders in naked state 1`] = `
 <DocumentFragment>
   <a
     href="/test"
-  />
+  >
+    Test
+  </a>
 </DocumentFragment>
 `;
 
@@ -20,6 +24,8 @@ exports[`NextMuiLink Component renders with href object 1`] = `
 <DocumentFragment>
   <a
     href="/test"
-  />
+  >
+    Test
+  </a>
 </DocumentFragment>
 `;

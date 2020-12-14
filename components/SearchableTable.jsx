@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
+import {useDebounce} from '../utils/hooks';
 import {TextField, Box} from '@material-ui/core';
 import Fuse from 'fuse.js'; ;
 
-import Table from './Table';
+import BusinessGrid from './BusinessGrid';
 
 import places from '../test-data/places';
 
@@ -46,6 +47,7 @@ const SearchableTable = ({dataSet}) => {
   const [fuse, setFuse] = useState(null);
   const [rows, setRows] = useState(dataSet);
   const [search, setSearch] = useState('');
+  const debouncedSearchTerm = useDebounce(search, 300);
 
   useEffect(() => {
     const data = dataSet.sort(() => Math.random() - 0.5);
@@ -54,12 +56,12 @@ const SearchableTable = ({dataSet}) => {
   }, [dataSet]);
 
   useEffect(() => {
-    if (search.trim().length === 0) {
+    if (debouncedSearchTerm.trim().length === 0) {
       setRows(dataSet);
     } else if (fuse) {
-      setRows(fuse.search(search).map((r) => r.item));
+      setRows(fuse.search(debouncedSearchTerm).map((r) => r.item));
     }
-  }, [search]);
+  }, [debouncedSearchTerm]);
 
   return (
     <Box>
@@ -75,7 +77,7 @@ const SearchableTable = ({dataSet}) => {
           color="primary"/>
       </Box>
       <Box mt={3}>
-        <Table rows={rows} />
+        <BusinessGrid places={rows} />
       </Box>
     </Box>
   );

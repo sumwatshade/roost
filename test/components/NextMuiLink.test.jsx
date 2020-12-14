@@ -11,13 +11,15 @@ jest.mock('clsx', () => () => {});
 
 describe('NextMuiLink Component', () => {
   test('renders in default state', () => {
-    const {asFragment} = render(<NextMuiLink href="/test"/>);
+    const {asFragment} = render(
+        <NextMuiLink href="/test">Test</NextMuiLink>);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   test('renders in naked state', () => {
-    const {asFragment} = render(<NextMuiLink href="/test" naked={true}/>);
+    const {asFragment} = render(
+        <NextMuiLink href="/test" naked={true}>Test</NextMuiLink>);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -26,7 +28,8 @@ describe('NextMuiLink Component', () => {
     const href = {
       pathname: '/test',
     };
-    const {asFragment} = render(<NextMuiLink href={href} naked={true}/>);
+    const {asFragment} = render(
+        <NextMuiLink href={href} naked={true}>Test</NextMuiLink>);
 
     expect(asFragment()).toMatchSnapshot();
   });
