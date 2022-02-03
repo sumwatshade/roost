@@ -4,34 +4,25 @@
 
 ### Before you start developing...
 
-- Make sure you have Node >= 10.13.0 installed. We reccommend [lts/dubnium (v10)](https://nodejs.org/download/release/latest-dubnium/) or [lts/erbium (v12)](https://nodejs.org/download/release/latest-erbium/), managed by [NVM](https://github.com/nvm-sh/nvm)
+- Make sure you have Node installed. LTE is recommended and currently serving Roost purposes.
 
-- Make sure that you have [Yarn](https://classic.yarnpkg.com/en/docs/install/) installed. This is our preferred package manager.
+- The supported package manager and scripting tool for Roost is [Yarn](https://classic.yarnpkg.com/en/docs/install/). This is our preferred package manager; if you choose to use `npm` please know you have signed up to maintaining a new part of this doc 😀.
 
-- Our Google Maps component will require an API key, exported as environment variable `MAPS_API_KEY`. Please ensure that you have [grabbed a personal api key](https://developers.google.com/maps/documentation/javascript/get-api-key) from Google for personal development.
+- Our Google Maps component will require an API key, exported as environment variable `MAPS_API_KEY`. Contributors will have to [grabbed a personal api key](https://developers.google.com/maps/documentation/javascript/get-api-key) from Google for personal development, and add it to their own `.env.dev` file.
+
+```bash
+$ cp .env.local.template .env.dev
+$ vi .env.dev # insert your API key
+```
 
 ### Local Development
 
-- Install local dependencies with
-
 ```bash
 yarn install
-```
-
-- ensure that your API key is exposed
-
-```
-> echo $MAPS_API_KEY
-XXXX-XXXX-XXXX
-```
-
-- run the local server with
-
-```
 yarn dev
 ```
 
-- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open [http://localhost:3000](http://localhost:3000).
 
 ## Technology
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Document, {Head, Main, NextScript} from 'next/document';
+import Document, {Head, Html, Main, NextScript} from 'next/document';
 import {ServerStyleSheets} from '@material-ui/core/styles';
 import theme from '../config/theme';
 
@@ -13,7 +13,7 @@ export default class RoostDocument extends Document {
    */
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
@@ -26,7 +26,7 @@ export default class RoostDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

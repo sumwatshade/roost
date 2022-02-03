@@ -11,19 +11,19 @@
 # next.js
 /.next/
 /out/
+*.dev
 
 # production
 /build
 
 # misc
 .DS_Store
-.env*
+reports/
+
+# ide
+.idea/
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-set-env.sh
-
-reports/
