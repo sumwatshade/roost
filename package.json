@@ -25,7 +25,7 @@
     "@babel/core": "7.16.12",
     "@commitlint/cli": "16.1.0",
     "@commitlint/config-conventional": "16.0.0",
-    "@testing-library/react": "12.1.2",
+    "@testing-library/react": "12.1.5",
     "babel-jest": "27.4.6",
     "eslint": "8.8.0",
     "eslint-config-google": "0.14.0",
