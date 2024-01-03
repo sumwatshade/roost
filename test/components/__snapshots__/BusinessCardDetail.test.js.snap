@@ -3,7 +3,7 @@
 exports[`BusinessCardDetail Component handles empty tags gracefully 1`] = `
 <DocumentFragment>
   <div
-    class="MuiCollapse-container MuiBox-root MuiBox-root-39 MuiCollapse-hidden"
+    class="MuiCollapse-root MuiBox-root MuiBox-root-2 MuiCollapse-hidden"
     style="min-height: 0px;"
   >
     <div
@@ -22,7 +22,7 @@ exports[`BusinessCardDetail Component handles empty tags gracefully 1`] = `
 exports[`BusinessCardDetail Component renders in default collapsed state 1`] = `
 <DocumentFragment>
   <div
-    class="MuiCollapse-container MuiBox-root MuiBox-root-2 MuiCollapse-hidden"
+    class="MuiCollapse-root MuiBox-root MuiBox-root-1 MuiCollapse-hidden"
     style="min-height: 0px;"
   >
     <div

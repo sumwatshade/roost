@@ -34,7 +34,6 @@ exports[`BusinessCardSummary Component renders in default state 1`] = `
         aria-hidden="true"
         class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
         focusable="false"
-        role="presentation"
         viewBox="0 0 24 24"
       >
         <path

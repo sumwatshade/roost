@@ -6,7 +6,7 @@ exports[`Maps Component renders in default state 1`] = `
     class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-1 MuiPaper-elevation3 MuiPaper-rounded"
   >
     <div
-      class="MuiBox-root MuiBox-root-31"
+      class="MuiBox-root MuiBox-root-2"
     >
       <div
         class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
@@ -35,10 +35,10 @@ exports[`Maps Component renders in default state 1`] = `
 exports[`Maps Component rerender to change zoom 1`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-44 MuiPaper-elevation3 MuiPaper-rounded"
+    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-3 MuiPaper-elevation3 MuiPaper-rounded"
   >
     <div
-      class="MuiBox-root MuiBox-root-74"
+      class="MuiBox-root MuiBox-root-4"
     >
       <div
         class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
@@ -67,10 +67,10 @@ exports[`Maps Component rerender to change zoom 1`] = `
 exports[`Maps Component rerender to change zoom 2`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-44 MuiPaper-elevation3 MuiPaper-rounded"
+    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-3 MuiPaper-elevation3 MuiPaper-rounded"
   >
     <div
-      class="MuiBox-root MuiBox-root-74"
+      class="MuiBox-root MuiBox-root-4"
     >
       <div
         class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"

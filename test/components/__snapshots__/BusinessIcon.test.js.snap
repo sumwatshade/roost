@@ -6,7 +6,6 @@ exports[`BusinessIcon Component renders FastFoodIcon 1`] = `
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -22,7 +21,6 @@ exports[`BusinessIcon Component renders LocalBarIcon 1`] = `
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -38,7 +36,6 @@ exports[`BusinessIcon Component renders LocalCafeIcon 1`] = `
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -54,7 +51,6 @@ exports[`BusinessIcon Component renders LocalConvenienceStoreIcon 1`] = `
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -70,7 +66,6 @@ exports[`BusinessIcon Component renders LocalDiningIcon 1`] = `
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -86,7 +81,6 @@ exports[`BusinessIcon Component renders PinDropIcon in default state 1`] = `
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -102,7 +96,6 @@ exports[`BusinessIcon Component renders StoreIcon 1`] = `
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path
@@ -118,7 +111,6 @@ exports[`BusinessIcon Component renders default icon if the defined icon is not 
     aria-hidden="true"
     class="MuiSvgIcon-root"
     focusable="false"
-    role="presentation"
     viewBox="0 0 24 24"
   >
     <path

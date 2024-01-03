@@ -13,7 +13,6 @@ exports[`WebsiteLink Component logs link clicks 1`] = `
       aria-hidden="true"
       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
       focusable="false"
-      role="presentation"
       viewBox="0 0 24 24"
     >
       <path
@@ -37,7 +36,6 @@ exports[`WebsiteLink Component renders in default state 1`] = `
       aria-hidden="true"
       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
       focusable="false"
-      role="presentation"
       viewBox="0 0 24 24"
     >
       <path
@@ -61,7 +59,6 @@ exports[`WebsiteLink Component renders in default state 2`] = `
       aria-hidden="true"
       class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
       focusable="false"
-      role="presentation"
       viewBox="0 0 24 24"
     >
       <path

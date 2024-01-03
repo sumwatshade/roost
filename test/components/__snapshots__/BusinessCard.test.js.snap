@@ -3,7 +3,7 @@
 exports[`BusinessCard Component click to expand 1`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-127 MuiPaper-outlined MuiPaper-rounded"
+    class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-4 MuiPaper-outlined MuiPaper-rounded"
   >
     <h4
       class="MuiTypography-root MuiTypography-h4"
@@ -24,7 +24,6 @@ exports[`BusinessCard Component click to expand 1`] = `
           aria-hidden="true"
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -34,7 +33,7 @@ exports[`BusinessCard Component click to expand 1`] = `
       </a>
     </p>
     <div
-      class="MuiCollapse-container MuiBox-root MuiBox-root-202 MuiCollapse-hidden"
+      class="MuiCollapse-root MuiBox-root MuiBox-root-5 MuiCollapse-hidden"
       style="min-height: 0px;"
     >
       <div
@@ -52,7 +51,7 @@ exports[`BusinessCard Component click to expand 1`] = `
       </div>
     </div>
     <button
-      class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-208 MuiButton-contained MuiButton-containedPrimary"
+      class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-6 MuiButton-contained MuiButton-containedPrimary"
       tabindex="0"
       type="button"
     >
@@ -72,7 +71,7 @@ exports[`BusinessCard Component click to expand 1`] = `
 exports[`BusinessCard Component click to expand 2`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-127 MuiPaper-outlined MuiPaper-rounded"
+    class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-4 MuiPaper-outlined MuiPaper-rounded"
   >
     <h4
       class="MuiTypography-root MuiTypography-h4"
@@ -93,7 +92,6 @@ exports[`BusinessCard Component click to expand 2`] = `
           aria-hidden="true"
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -103,7 +101,7 @@ exports[`BusinessCard Component click to expand 2`] = `
       </a>
     </p>
     <div
-      class="MuiCollapse-container MuiBox-root MuiBox-root-202"
+      class="MuiCollapse-root MuiBox-root MuiBox-root-5"
       style="min-height: 0px; height: 0px; transition-duration: 300ms;"
     >
       <div
@@ -121,7 +119,7 @@ exports[`BusinessCard Component click to expand 2`] = `
       </div>
     </div>
     <button
-      class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-208 MuiButton-contained MuiButton-containedPrimary"
+      class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-6 MuiButton-contained MuiButton-containedPrimary"
       tabindex="0"
       type="button"
     >
@@ -141,7 +139,7 @@ exports[`BusinessCard Component click to expand 2`] = `
 exports[`BusinessCard Component renders in default state 1`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-2 MuiPaper-outlined MuiPaper-rounded"
+    class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-1 MuiPaper-outlined MuiPaper-rounded"
   >
     <h4
       class="MuiTypography-root MuiTypography-h4"
@@ -162,7 +160,6 @@ exports[`BusinessCard Component renders in default state 1`] = `
           aria-hidden="true"
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -172,7 +169,7 @@ exports[`BusinessCard Component renders in default state 1`] = `
       </a>
     </p>
     <div
-      class="MuiCollapse-container MuiBox-root MuiBox-root-77 MuiCollapse-hidden"
+      class="MuiCollapse-root MuiBox-root MuiBox-root-2 MuiCollapse-hidden"
       style="min-height: 0px;"
     >
       <div
@@ -190,7 +187,7 @@ exports[`BusinessCard Component renders in default state 1`] = `
       </div>
     </div>
     <button
-      class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-83 MuiButton-contained MuiButton-containedPrimary"
+      class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-3 MuiButton-contained MuiButton-containedPrimary"
       tabindex="0"
       type="button"
     >

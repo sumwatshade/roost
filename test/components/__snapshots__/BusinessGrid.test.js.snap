@@ -9,7 +9,7 @@ exports[`BusinessGrid Component renders in default collapsed state 1`] = `
       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3"
     >
       <div
-        class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-105 MuiPaper-outlined MuiPaper-rounded"
+        class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-1 MuiPaper-outlined MuiPaper-rounded"
       >
         <h4
           class="MuiTypography-root MuiTypography-h4"
@@ -30,7 +30,6 @@ exports[`BusinessGrid Component renders in default collapsed state 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
               focusable="false"
-              role="presentation"
               viewBox="0 0 24 24"
             >
               <path
@@ -40,7 +39,7 @@ exports[`BusinessGrid Component renders in default collapsed state 1`] = `
           </a>
         </p>
         <div
-          class="MuiCollapse-container MuiBox-root MuiBox-root-180 MuiCollapse-hidden"
+          class="MuiCollapse-root MuiBox-root MuiBox-root-2 MuiCollapse-hidden"
           style="min-height: 0px;"
         >
           <div
@@ -58,7 +57,7 @@ exports[`BusinessGrid Component renders in default collapsed state 1`] = `
           </div>
         </div>
         <button
-          class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-186 MuiButton-contained MuiButton-containedPrimary"
+          class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-3 MuiButton-contained MuiButton-containedPrimary"
           tabindex="0"
           type="button"
         >

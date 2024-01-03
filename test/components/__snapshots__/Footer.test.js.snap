@@ -3,11 +3,11 @@
 exports[`Footer Component renders in default state 1`] = `
 <DocumentFragment>
   <footer
-    class="MuiBox-root MuiBox-root-3 Styled(MuiBox)-root-1"
+    class="MuiBox-root MuiBox-root-2 Styled(MuiBox)-root-1"
     classes="[object Object]"
   >
     <p
-      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-4 MuiTypography-body1"
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
     >
       Questions? Business Request? Send us a message at 
       <a
@@ -21,7 +21,6 @@ exports[`Footer Component renders in default state 1`] = `
           aria-hidden="true"
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
@@ -31,7 +30,7 @@ exports[`Footer Component renders in default state 1`] = `
       </a>
     </p>
     <p
-      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-4 MuiTypography-body1"
+      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
     >
       Click 
       <a
@@ -45,7 +44,6 @@ exports[`Footer Component renders in default state 1`] = `
           aria-hidden="true"
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
           focusable="false"
-          role="presentation"
           viewBox="0 0 24 24"
         >
           <path
