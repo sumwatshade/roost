@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {BusinessInfoType} from '../test-data/data-types';
-import {Typography} from '@material-ui/core';
+import {Typography} from '@mui/material';
 import WebsiteLink from './WebsiteLink';
 
 const CardSummary = ({businessInfo}) => {

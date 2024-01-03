@@ -3,7 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import Maps from '../components/Maps';
 import SearchableTable from '../components/SearchableTable';
-import {Container, Box} from '@material-ui/core';
+import {Container, Box} from '@mui/material';
 import CenteredTypography from '../components/CenteredTypography';
 
 const Home = () => {

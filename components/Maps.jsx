@@ -5,25 +5,26 @@ import WebsiteLink from './WebsiteLink';
 import places from '../test-data/places';
 import {
   Typography,
-  MuiThemeProvider,
+  ThemeProvider,
   useTheme,
   Paper,
-  withStyles,
+
   CircularProgress,
   Box,
-} from '@material-ui/core'; import BusinessIcon from './BusinessIcon';
+  styled,
+} from '@mui/material'; import BusinessIcon from './BusinessIcon';
 
 const mapStyles = {
   height: '500px',
   borderRadius: '4px',
 };
 
-const StyledPaper = withStyles({
+const StyledPaper = styled(Paper)(() => ({
   root: {
     display: 'flex',
     ...mapStyles,
   },
-})(Paper);
+}));
 
 const LoadingComponent = () => (
   <StyledPaper elevation={3}>
@@ -86,7 +87,7 @@ const Maps = ({zoom, google}) => {
         <InfoWindow
           marker={activeMarker}
           visible={typeof activeMarker !== 'null'}>
-          <MuiThemeProvider theme={theme}>
+          <ThemeProvider theme={theme}>
             <div style={{
               display: 'flex',
               flexDirection: 'column',
@@ -99,7 +100,7 @@ const Maps = ({zoom, google}) => {
                 label={markerDetails.website}
                 color='primary'/>
             </div>
-          </MuiThemeProvider>
+          </ThemeProvider>
         </InfoWindow>
       </Map>
     </StyledPaper>

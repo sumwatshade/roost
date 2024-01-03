@@ -1,12 +1,12 @@
-import FastfoodIcon from '@material-ui/icons/Fastfood';
-import LocalBarIcon from '@material-ui/icons/LocalBar';
-import LocalCafeIcon from '@material-ui/icons/LocalCafe';
+import FastfoodIcon from '@mui/icons-material/Fastfood';
+import LocalBarIcon from '@mui/icons-material/LocalBar';
+import LocalCafeIcon from '@mui/icons-material/LocalCafe';
 import LocalConvenienceStoreIcon
-  from '@material-ui/icons/LocalConvenienceStore';
-import LocalDiningIcon from '@material-ui/icons/LocalDining';
-import PinDropIcon from '@material-ui/icons/PinDrop';
+  from '@mui/icons-material/LocalConvenienceStore';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
+import PinDropIcon from '@mui/icons-material/PinDrop';
 import React from 'react';
-import StoreIcon from '@material-ui/icons/Store';
+import StoreIcon from '@mui/icons-material/Store';
 
 const icons = {
   'FastFoodIcon': FastfoodIcon,

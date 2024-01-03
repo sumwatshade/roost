@@ -3,15 +3,14 @@
 exports[`Footer Component renders in default state 1`] = `
 <DocumentFragment>
   <footer
-    class="MuiBox-root MuiBox-root-2 Styled(MuiBox)-root-1"
-    classes="[object Object]"
+    class="MuiBox-root css-1wl4hsz"
   >
     <p
-      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
+      class="MuiTypography-root MuiTypography-body1 css-won9nh-MuiTypography-root"
     >
       Questions? Business Request? Send us a message at 
       <a
-        class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root"
         href="mailto:roost.sb@gmail.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -19,7 +18,8 @@ exports[`Footer Component renders in default state 1`] = `
         roost.sb@gmail.com 
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+          data-testid="OpenInNewIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >
@@ -30,11 +30,11 @@ exports[`Footer Component renders in default state 1`] = `
       </a>
     </p>
     <p
-      class="MuiTypography-root WithStyles(ForwardRef(Typography))-root-3 MuiTypography-body1"
+      class="MuiTypography-root MuiTypography-body1 css-won9nh-MuiTypography-root"
     >
       Click 
       <a
-        class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root"
         href="https://covid19responsefund.org/"
         rel="noopener noreferrer"
         target="_blank"
@@ -42,7 +42,8 @@ exports[`Footer Component renders in default state 1`] = `
         here 
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+          data-testid="OpenInNewIcon"
           focusable="false"
           viewBox="0 0 24 24"
         >

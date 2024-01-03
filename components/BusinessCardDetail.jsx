@@ -1,7 +1,7 @@
 import React from 'react';
 import {bool} from 'prop-types';
 import {BusinessInfoType} from '../test-data/data-types';
-import {Box, Typography, Collapse} from '@material-ui/core';
+import {Box, Typography, Collapse} from '@mui/material';
 
 const CardDetail = ({businessInfo, expanded}) => {
   const {tags} = businessInfo;

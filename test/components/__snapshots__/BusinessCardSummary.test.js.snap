@@ -3,12 +3,12 @@
 exports[`BusinessCardSummary Component handles empty website gracefully 1`] = `
 <DocumentFragment>
   <h4
-    class="MuiTypography-root MuiTypography-h4"
+    class="MuiTypography-root MuiTypography-h4 css-5lbw0b-MuiTypography-root"
   >
     Heartwork
   </h4>
   <p
-    class="MuiTypography-root MuiTypography-body1"
+    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
   />
 </DocumentFragment>
 `;
@@ -16,15 +16,15 @@ exports[`BusinessCardSummary Component handles empty website gracefully 1`] = `
 exports[`BusinessCardSummary Component renders in default state 1`] = `
 <DocumentFragment>
   <h4
-    class="MuiTypography-root MuiTypography-h4"
+    class="MuiTypography-root MuiTypography-h4 css-5lbw0b-MuiTypography-root"
   >
     Heartwork
   </h4>
   <p
-    class="MuiTypography-root MuiTypography-body1"
+    class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
   >
     <a
-      class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root"
       href="https://heartwork.com"
       rel="noopener noreferrer"
       target="_blank"
@@ -32,7 +32,8 @@ exports[`BusinessCardSummary Component renders in default state 1`] = `
       Website 
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+        data-testid="OpenInNewIcon"
         focusable="false"
         viewBox="0 0 24 24"
       >

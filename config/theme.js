@@ -1,8 +1,8 @@
 
-import {createMuiTheme} from '@material-ui/core/styles';
+import {createTheme} from '@mui/material';
 
 // Create a theme instance.
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: '#4cb5ab',

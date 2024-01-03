@@ -3,24 +3,24 @@
 exports[`BusinessGrid Component renders in default collapsed state 1`] = `
 <DocumentFragment>
   <div
-    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1"
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-a5rdam-MuiGrid-root"
   >
     <div
-      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3"
+      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 MuiGrid-grid-lg-3 css-14j1sok-MuiGrid-root"
     >
       <div
-        class="MuiPaper-root MuiCard-root MuiBox-root MuiBox-root-1 MuiPaper-outlined MuiPaper-rounded"
+        class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root MuiBox-root css-1dz3mcu-MuiPaper-root-MuiCard-root"
       >
         <h4
-          class="MuiTypography-root MuiTypography-h4"
+          class="MuiTypography-root MuiTypography-h4 css-5lbw0b-MuiTypography-root"
         >
           Heartwork
         </h4>
         <p
-          class="MuiTypography-root MuiTypography-body1"
+          class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
         >
           <a
-            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root"
             href="https://heartwork.com"
             rel="noopener noreferrer"
             target="_blank"
@@ -28,7 +28,8 @@ exports[`BusinessGrid Component renders in default collapsed state 1`] = `
             Website 
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+              data-testid="OpenInNewIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
@@ -39,17 +40,17 @@ exports[`BusinessGrid Component renders in default collapsed state 1`] = `
           </a>
         </p>
         <div
-          class="MuiCollapse-root MuiBox-root MuiBox-root-2 MuiCollapse-hidden"
+          class="MuiCollapse-root MuiCollapse-vertical MuiBox-root MuiCollapse-hidden css-9qxzol-MuiCollapse-root"
           style="min-height: 0px;"
         >
           <div
-            class="MuiCollapse-wrapper"
+            class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
           >
             <div
-              class="MuiCollapse-wrapperInner"
+              class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
             >
               <p
-                class="MuiTypography-root MuiTypography-body1"
+                class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
               >
                 Tags: coffee, test
               </p>
@@ -57,17 +58,13 @@ exports[`BusinessGrid Component renders in default collapsed state 1`] = `
           </div>
         </div>
         <button
-          class="MuiButtonBase-root MuiButton-root WithStyles(ForwardRef(Button))-root-3 MuiButton-contained MuiButton-containedPrimary"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-1473map-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
+          Show more...
           <span
-            class="MuiButton-label"
-          >
-            Show more...
-          </span>
-          <span
-            class="MuiTouchRipple-root"
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
           />
         </button>
       </div>

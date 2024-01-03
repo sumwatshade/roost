@@ -3,22 +3,22 @@
 exports[`Maps Component renders in default state 1`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-1 MuiPaper-elevation3 MuiPaper-rounded"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-14ovd3l-MuiPaper-root"
   >
     <div
-      class="MuiBox-root MuiBox-root-2"
+      class="MuiBox-root css-42igfv"
     >
-      <div
-        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      <span
+        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
         role="progressbar"
         style="width: 80px; height: 80px;"
       >
         <svg
-          class="MuiCircularProgress-svg"
+          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
           viewBox="22 22 44 44"
         >
           <circle
-            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
             cx="44"
             cy="44"
             fill="none"
@@ -26,7 +26,7 @@ exports[`Maps Component renders in default state 1`] = `
             stroke-width="4"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </div>
 </DocumentFragment>
@@ -35,22 +35,22 @@ exports[`Maps Component renders in default state 1`] = `
 exports[`Maps Component rerender to change zoom 1`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-3 MuiPaper-elevation3 MuiPaper-rounded"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-14ovd3l-MuiPaper-root"
   >
     <div
-      class="MuiBox-root MuiBox-root-4"
+      class="MuiBox-root css-42igfv"
     >
-      <div
-        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      <span
+        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
         role="progressbar"
         style="width: 80px; height: 80px;"
       >
         <svg
-          class="MuiCircularProgress-svg"
+          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
           viewBox="22 22 44 44"
         >
           <circle
-            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
             cx="44"
             cy="44"
             fill="none"
@@ -58,7 +58,7 @@ exports[`Maps Component rerender to change zoom 1`] = `
             stroke-width="4"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </div>
 </DocumentFragment>
@@ -67,22 +67,22 @@ exports[`Maps Component rerender to change zoom 1`] = `
 exports[`Maps Component rerender to change zoom 2`] = `
 <DocumentFragment>
   <div
-    class="MuiPaper-root WithStyles(ForwardRef(Paper))-root-3 MuiPaper-elevation3 MuiPaper-rounded"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation3 css-14ovd3l-MuiPaper-root"
   >
     <div
-      class="MuiBox-root MuiBox-root-4"
+      class="MuiBox-root css-42igfv"
     >
-      <div
-        class="MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
+      <span
+        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
         role="progressbar"
         style="width: 80px; height: 80px;"
       >
         <svg
-          class="MuiCircularProgress-svg"
+          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
           viewBox="22 22 44 44"
         >
           <circle
-            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
             cx="44"
             cy="44"
             fill="none"
@@ -90,7 +90,7 @@ exports[`Maps Component rerender to change zoom 2`] = `
             stroke-width="4"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </div>
 </DocumentFragment>

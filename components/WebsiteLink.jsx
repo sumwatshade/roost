@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from '@material-ui/core';
-import OpenInNew from '@material-ui/icons/OpenInNew';
+import {Link} from '@mui/material';
+import OpenInNew from '@mui/icons-material/OpenInNew';
 import {logEvent, CATEGORY} from '../utils/analytics';
 
 const WebsiteLink = ({href, label, color}) => (

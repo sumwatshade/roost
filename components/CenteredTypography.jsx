@@ -1,12 +1,12 @@
-import {Typography, withStyles} from '@material-ui/core';
+import {styled, Typography} from '@mui/material';
 
-const CenteredTypography = withStyles(({spacing}) => ({
+const CenteredTypography = styled(Typography)(({theme}) => ({
   root: {
     textAlign: 'center',
   },
   h2: {
-    marginTop: spacing(3),
+    marginTop: theme.spacing(3),
   },
-}))(Typography);
+}));
 
 export default CenteredTypography;
