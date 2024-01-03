@@ -7,28 +7,7 @@ exports[`Nav Component renders in default state 1`] = `
   >
     <div
       class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
-    >
-      <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vrl3mg-MuiTypography-root-MuiLink-root"
-        href="/"
-      >
-        <h6
-          class="MuiTypography-root MuiTypography-h6 css-io3amt-MuiTypography-root"
-        >
-          Home
-        </h6>
-      </a>
-      <a
-        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vrl3mg-MuiTypography-root-MuiLink-root"
-        href="/about"
-      >
-        <h6
-          class="MuiTypography-root MuiTypography-h6 css-io3amt-MuiTypography-root"
-        >
-          About
-        </h6>
-      </a>
-    </div>
+    />
   </nav>
 </DocumentFragment>
 `;

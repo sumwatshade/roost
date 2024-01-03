@@ -16,8 +16,6 @@ const config: Config = {
     // TODO: Table Rewrite
     '!**/Table.jsx',
     '!**/SearchableTable.jsx',
-    // TODO: Map rework
-    '!**/Maps.jsx',
   ],
   coverageThreshold: {
     'global': {

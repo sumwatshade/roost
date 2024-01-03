@@ -8,8 +8,6 @@
 
 - The supported package manager and scripting tool for Roost is [Yarn](https://classic.yarnpkg.com/en/docs/install/). This is our preferred package manager; if you choose to use `npm` please know you have signed up to maintaining a new part of this doc 😀.
 
-- Our Google Maps component will require an API key, exported as environment variable `MAPS_API_KEY`. Contributors will have to [grabbed a personal api key](https://developers.google.com/maps/documentation/javascript/get-api-key) from Google for personal development, and add it to their own `.env.dev` file.
-
 ```bash
 $ cp .env.local.template .env.dev
 $ vi .env.dev # insert your API key

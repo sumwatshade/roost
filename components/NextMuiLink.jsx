@@ -1,18 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
-import {useRouter} from 'next/router';
-import NextLink from 'next/link';
-import MuiLink from '@mui/material/Link';
+import React from "react";
+import PropTypes from "prop-types";
+import clsx from "clsx";
+import { useRouter } from "next/router";
+import NextLink from "next/link";
+import MuiLink from "@mui/material/Link";
 
 const NextComposed = React.forwardRef(function NextComposed(props, ref) {
-  const {as, href, ...other} = props;
+  const { as, href, ...other } = props;
 
-  return (
-    <NextLink href={href} as={as}>
-      <a ref={ref} {...other} />
-    </NextLink>
-  );
+  return <NextLink href={href} as={as} ref={ref} {...other}></NextLink>;
 });
 
 NextComposed.propTypes = {
@@ -30,7 +26,7 @@ NextComposed.propTypes = {
 function Link(props) {
   const {
     href,
-    activeClassName = 'active',
+    activeClassName = "active",
     className: classNameProps,
     innerRef,
     naked,
@@ -38,19 +34,21 @@ function Link(props) {
   } = props;
 
   const router = useRouter();
-  const pathname = typeof href === 'string' ? href : href.pathname;
+  const pathname = typeof href === "string" ? href : href.pathname;
   const className = clsx(classNameProps, {
-    [activeClassName]: router && router.pathname === pathname ?
-      activeClassName :
-      false,
+    [activeClassName]:
+      router && router.pathname === pathname ? activeClassName : false,
   });
 
   if (naked) {
-    return <NextComposed
-      className={className}
-      ref={innerRef}
-      href={href}
-      {...other} />;
+    return (
+      <NextComposed
+        className={className}
+        ref={innerRef}
+        href={href}
+        {...other}
+      />
+    );
   }
 
   return (
@@ -59,7 +57,8 @@ function Link(props) {
       className={className}
       ref={innerRef}
       href={href}
-      {...other} />
+      {...other}
+    />
   );
 }
 
@@ -75,5 +74,6 @@ Link.propTypes = {
 };
 
 // eslint-disable-next-line react/display-name
-export default React.forwardRef((props, ref) =>
-  <Link {...props} innerRef={ref} />);
+export default React.forwardRef((props, ref) => (
+  <Link {...props} innerRef={ref} />
+));

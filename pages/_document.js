@@ -1,7 +1,7 @@
-import React from 'react';
-import Document, {Head, Html, Main, NextScript} from 'next/document';
-import {ServerStyleSheets} from '@mui/styles';
-import theme from '../config/theme';
+import React from "react";
+import Document, { Head, Html, Main, NextScript } from "next/document";
+import { ServerStyleSheets } from "@mui/styles";
+import theme from "../config/theme";
 
 /**
  * Document component
@@ -15,6 +15,10 @@ export default class RoostDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta
+            name="viewport"
+            content="minimum-scale=1, initial-scale=1, width=device-width"
+          />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link
