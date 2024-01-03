@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {BusinessInfoType} from '../test-data/data-types';
-import {Grid} from '@material-ui/core';
+import {Grid} from '@mui/material';
 import BusinessCard from './BusinessCard';
 
 const BusinessGrid = ({places}) => {

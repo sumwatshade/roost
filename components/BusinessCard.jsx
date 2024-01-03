@@ -1,19 +1,19 @@
 import React from 'react';
 
 import {BusinessInfoType} from '../test-data/data-types';
-import {Card, Box, Button, withStyles} from '@material-ui/core';
+import {Card, Box, Button, styled} from '@mui/material';
 import {useState} from 'react';
 
 import BusinessCardDetail from './BusinessCardDetail';
 import BusinessCardSummary from './BusinessCardSummary';
 
-const ShowMoreButton = withStyles(({spacing}) => ({
+const ShowMoreButton = styled(Button)(({theme}) => ({
   root: {
     width: '80%',
-    marginTop: spacing(2),
-    marginBottom: spacing(2),
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
   },
-}))(Button);
+}));
 
 const BusinessCard = ({businessInfo}) => {
   const [isExpanded, setIsExpanded] = useState(false);

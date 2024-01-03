@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {useDebounce} from '../utils/hooks';
-import {TextField, Box} from '@material-ui/core';
+import {TextField, Box} from '@mui/material';
 import Fuse from 'fuse.js'; ;
 
 import BusinessGrid from './BusinessGrid';
@@ -19,29 +19,6 @@ const fuseOptions = {
     weight: 0.2,
   }],
 };
-
-
-// const CssTextField = withStyles({
-//   root: {
-//     '& label.Mui-focused': {
-//       color: 'white',
-//     },
-//     '& .MuiInput-underline:after': {
-//       borderBottomColor: '#4cb5ab',
-//     },
-//     '& .MuiOutlinedInput-root': {
-//       '& fieldset': {
-//         borderColor: 'white',
-//       },
-//       '&:hover fieldset': {
-//         borderColor: 'white',
-//       },
-//       '&.Mui-focused fieldset': {
-//         borderColor: '#4cb5ab',
-//       },
-//     },
-//   },
-// })(TextField);
 
 const SearchableTable = ({dataSet}) => {
   const [fuse, setFuse] = useState(null);

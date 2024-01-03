@@ -3,7 +3,7 @@
 exports[`WebsiteLink Component logs link clicks 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root"
     href=""
     rel="noopener noreferrer"
     target="_blank"
@@ -11,7 +11,8 @@ exports[`WebsiteLink Component logs link clicks 1`] = `
     click this 
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+      data-testid="OpenInNewIcon"
       focusable="false"
       viewBox="0 0 24 24"
     >
@@ -26,7 +27,7 @@ exports[`WebsiteLink Component logs link clicks 1`] = `
 exports[`WebsiteLink Component renders in default state 1`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1xylxj1-MuiTypography-root-MuiLink-root"
     href=""
     rel="noopener noreferrer"
     target="_blank"
@@ -34,7 +35,8 @@ exports[`WebsiteLink Component renders in default state 1`] = `
      
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+      data-testid="OpenInNewIcon"
       focusable="false"
       viewBox="0 0 24 24"
     >
@@ -49,7 +51,7 @@ exports[`WebsiteLink Component renders in default state 1`] = `
 exports[`WebsiteLink Component renders in default state 2`] = `
 <DocumentFragment>
   <a
-    class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorSecondary"
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1vrl3mg-MuiTypography-root-MuiLink-root"
     href=""
     rel="noopener noreferrer"
     target="_blank"
@@ -57,7 +59,8 @@ exports[`WebsiteLink Component renders in default state 2`] = `
      
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1vooibu-MuiSvgIcon-root"
+      data-testid="OpenInNewIcon"
       focusable="false"
       viewBox="0 0 24 24"
     >

@@ -3,14 +3,14 @@
 exports[`BusinessCardDetail Component handles empty tags gracefully 1`] = `
 <DocumentFragment>
   <div
-    class="MuiCollapse-root MuiBox-root MuiBox-root-2 MuiCollapse-hidden"
+    class="MuiCollapse-root MuiCollapse-vertical MuiBox-root MuiCollapse-hidden css-9qxzol-MuiCollapse-root"
     style="min-height: 0px;"
   >
     <div
-      class="MuiCollapse-wrapper"
+      class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
     >
       <div
-        class="MuiCollapse-wrapperInner"
+        class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
       >
         No details yet...
       </div>
@@ -22,17 +22,17 @@ exports[`BusinessCardDetail Component handles empty tags gracefully 1`] = `
 exports[`BusinessCardDetail Component renders in default collapsed state 1`] = `
 <DocumentFragment>
   <div
-    class="MuiCollapse-root MuiBox-root MuiBox-root-1 MuiCollapse-hidden"
+    class="MuiCollapse-root MuiCollapse-vertical MuiBox-root MuiCollapse-hidden css-9qxzol-MuiCollapse-root"
     style="min-height: 0px;"
   >
     <div
-      class="MuiCollapse-wrapper"
+      class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
     >
       <div
-        class="MuiCollapse-wrapperInner"
+        class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
       >
         <p
-          class="MuiTypography-root MuiTypography-body1"
+          class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
         >
           Tags: coffee, test
         </p>

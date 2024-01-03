@@ -1,5 +1,5 @@
 import React from 'react';
-import {Paper, Typography, Container, Box} from '@material-ui/core';
+import {Paper, Typography, Container, Box} from '@mui/material';
 import Head from 'next/head';
 import CenteredTypography from '../components/CenteredTypography';
 

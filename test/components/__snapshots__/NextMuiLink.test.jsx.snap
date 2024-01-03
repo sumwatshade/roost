@@ -3,6 +3,7 @@
 exports[`NextMuiLink Component renders in default state 1`] = `
 <DocumentFragment>
   <a
+    class="css-15ha3g6-MuiTypography-root"
     href="/test"
   >
     Test

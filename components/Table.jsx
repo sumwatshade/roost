@@ -8,18 +8,16 @@ import {
   TableRow,
   Paper,
   TablePagination,
-  makeStyles,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 
 import WebsiteLink from './WebsiteLink';
+import {styled} from '@mui/material/styles';
 
-const useStyles = makeStyles({
-  container: {
-    maxHeight: 500,
-    minHeight: 250,
-  },
-});
+const StyledTableContainer = styled(TableContainer)(() => ({
+  maxHeight: 500,
+  minHeight: 250,
+}));
 
 const PlaceTable = ({rows}) => {
   const [page, setPage] = React.useState(0);
@@ -33,11 +31,11 @@ const PlaceTable = ({rows}) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
-  const classes = useStyles();
+
   return (
     <Paper>
-      <TableContainer className={classes.container}>
-        <Table className={classes.table} aria-label="simple table">
+      <StyledTableContainer>
+        <Table aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>
@@ -72,7 +70,7 @@ const PlaceTable = ({rows}) => {
                 ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </StyledTableContainer>
       <TablePagination
         rowsPerPageOptions={[3, 5, 10]}
         component="div"

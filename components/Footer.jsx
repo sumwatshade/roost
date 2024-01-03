@@ -1,14 +1,14 @@
 import React from 'react';
 import WebsiteLink from './WebsiteLink';
-import {Box, withStyles} from '@material-ui/core';
+import {Box, styled} from '@mui/material';
 import CenteredTypography from './CenteredTypography';
 import Logo from './Logo';
 
-const StyledBox = withStyles(({palette}) => ({
+const StyledBox = styled(Box)(({theme}) => ({
   root: {
-    borderTop: `1px solid ${palette.primary.main}`,
+    borderTop: `1px solid ${theme.palette.primary.main}`,
   },
-}))(Box);
+}));
 
 const Footer = () => {
   return (
