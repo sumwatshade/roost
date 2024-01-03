@@ -1,15 +1,17 @@
-import React from 'react';
-import {bool} from 'prop-types';
-import {BusinessInfoType} from '../test-data/data-types';
-import {Box, Typography, Collapse} from '@mui/material';
+import React from "react";
+import { bool } from "prop-types";
+import { BusinessInfoType } from "../test-data/data-types";
+import { Box, Typography, Collapse } from "@mui/material";
 
-const CardDetail = ({businessInfo, expanded}) => {
-  const {tags} = businessInfo;
+const CardDetail = ({ businessInfo, expanded }) => {
+  const { tags } = businessInfo;
   return (
     <Box component={Collapse} in={expanded} m={1}>
       {tags ? (
-                <Typography>Tags: {tags.join(', ')}</Typography>
-            ) : 'No details yet...'}
+        <Typography>Tags: {tags.join(", ")}</Typography>
+      ) : (
+        "No details yet..."
+      )}
     </Box>
   );
 };

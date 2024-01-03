@@ -1,5 +1,5 @@
-import React from 'react';
-import {initGA, logPageView} from '../utils/analytics';
+import React from "react";
+import { initGA, logPageView } from "../utils/analytics";
 
 /**
  * Provides styling
@@ -21,10 +21,6 @@ export default class AnalyticsWrapper extends React.Component {
    * @return {JSX} props
    */
   render() {
-    return (
-      <>
-        {this.props.children}
-      </>
-    );
+    return <>{this.props.children}</>;
   }
 }

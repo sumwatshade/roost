@@ -1,8 +1,8 @@
-import {styled, Typography} from '@mui/material';
+import { styled, Typography } from "@mui/material";
 
-const CenteredTypography = styled(Typography)(({theme}) => ({
+const CenteredTypography = styled(Typography)(({ theme }) => ({
   root: {
-    textAlign: 'center',
+    textAlign: "center",
   },
   h2: {
     marginTop: theme.spacing(3),

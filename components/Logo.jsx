@@ -1,17 +1,20 @@
 /* eslint-disable max-len */
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-const Logo = ({size}) => {
+const Logo = ({ size }) => {
   return (
-    <svg id="Layer_1"
+    <svg
+      id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 109.5 110.88"
       preserveAspectRatio="true"
-      width={size}>
+      width={size}
+    >
       <defs>
-        <style>{`
+        <style>
+          {`
                 .cls-1 {
                     fill:#ffefc1;
                 }
@@ -30,12 +33,14 @@ const Logo = ({size}) => {
                 }`}
         </style>
       </defs>
-      <ellipse className="cls-1" cx="57.07" cy="47.5" rx="31" ry="47"/>
+      <ellipse className="cls-1" cx="57.07" cy="47.5" rx="31" ry="47" />
       <polyline
         className="cls-2"
-        points="72.07 69.5 0.07 60.5 14.07 62.5 35.07 100.5 42.07 95.5 98.07 94.5 80.07 94.5 101.07 44.5 109.07 37.5 24.07 110.5"/>
-      <line className="cls-3" x1="94.07" y1="50.5" x2="109.07" y2="25.5"/>
-    </svg>);
+        points="72.07 69.5 0.07 60.5 14.07 62.5 35.07 100.5 42.07 95.5 98.07 94.5 80.07 94.5 101.07 44.5 109.07 37.5 24.07 110.5"
+      />
+      <line className="cls-3" x1="94.07" y1="50.5" x2="109.07" y2="25.5" />
+    </svg>
+  );
 };
 
 Logo.propTypes = {
@@ -43,7 +48,7 @@ Logo.propTypes = {
 };
 
 Logo.defaultProps = {
-  size: '200px',
+  size: "200px",
 };
 export default Logo;
 /* eslint-enable max-len */

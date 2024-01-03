@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Table,
   TableCell,
@@ -9,17 +9,17 @@ import {
   Paper,
   TablePagination,
   Typography,
-} from '@mui/material';
+} from "@mui/material";
 
-import WebsiteLink from './WebsiteLink';
-import {styled} from '@mui/material/styles';
+import WebsiteLink from "./WebsiteLink";
+import { styled } from "@mui/material/styles";
 
 const StyledTableContainer = styled(TableContainer)(() => ({
   maxHeight: 500,
   minHeight: 250,
 }));
 
-const PlaceTable = ({rows}) => {
+const PlaceTable = ({ rows }) => {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
@@ -39,35 +39,40 @@ const PlaceTable = ({rows}) => {
           <TableHead>
             <TableRow>
               <TableCell>
-                <Typography style={{fontWeight: 'inherit'}}>
+                <Typography style={{ fontWeight: "inherit" }}>
                   Business Name
                 </Typography>
               </TableCell>
               <TableCell>
-                <Typography style={{fontWeight: 'inherit'}}>Tags</Typography>
+                <Typography style={{ fontWeight: "inherit" }}>Tags</Typography>
               </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows
-                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                .map(({name, website, tags}) => (
-                  <TableRow key={name}>
-                    <TableCell component="th" scope="row">
-                      <Typography color="secondary">
-                        { website ? (<WebsiteLink
+              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+              .map(({ name, website, tags }) => (
+                <TableRow key={name}>
+                  <TableCell component="th" scope="row">
+                    <Typography color="secondary">
+                      {website ? (
+                        <WebsiteLink
                           href={website}
                           color="secondary"
-                          label={name} />) : name}
-                      </Typography>
-                    </TableCell>
-                    <TableCell align="left">
-                      <Typography>
-                        {tags && tags.length ? tags.join(', ') : ''}
-                      </Typography>
-                    </TableCell>
-                  </TableRow>
-                ))}
+                          label={name}
+                        />
+                      ) : (
+                        name
+                      )}
+                    </Typography>
+                  </TableCell>
+                  <TableCell align="left">
+                    <Typography>
+                      {tags && tags.length ? tags.join(", ") : ""}
+                    </Typography>
+                  </TableCell>
+                </TableRow>
+              ))}
           </TableBody>
         </Table>
       </StyledTableContainer>

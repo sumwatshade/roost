@@ -1,29 +1,33 @@
-import React, {useState, useEffect} from 'react';
-import {useDebounce} from '../utils/hooks';
-import {TextField, Box} from '@mui/material';
-import Fuse from 'fuse.js'; ;
+import React, { useState, useEffect } from "react";
+import { useDebounce } from "../utils/hooks";
+import { TextField, Box } from "@mui/material";
+import Fuse from "fuse.js";
 
-import BusinessGrid from './BusinessGrid';
+import BusinessGrid from "./BusinessGrid";
 
-import places from '../test-data/places';
+import places from "../test-data/places";
 
 const fuseOptions = {
-  keys: [{
-    name: 'name',
-    weight: 0.4,
-  }, {
-    name: 'tags',
-    weight: 0.4,
-  }, {
-    name: 'website',
-    weight: 0.2,
-  }],
+  keys: [
+    {
+      name: "name",
+      weight: 0.4,
+    },
+    {
+      name: "tags",
+      weight: 0.4,
+    },
+    {
+      name: "website",
+      weight: 0.2,
+    },
+  ],
 };
 
-const SearchableTable = ({dataSet}) => {
+const SearchableTable = ({ dataSet }) => {
   const [fuse, setFuse] = useState(null);
   const [rows, setRows] = useState(dataSet);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const debouncedSearchTerm = useDebounce(search, 300);
 
   useEffect(() => {
@@ -46,12 +50,13 @@ const SearchableTable = ({dataSet}) => {
         <TextField
           placeholder="Search local places (ex. 'coffee, bar, vegan, ...')"
           style={{
-            width: '100%',
+            width: "100%",
           }}
           onChange={(e) => {
             setSearch(e.target.value);
           }}
-          color="primary"/>
+          color="primary"
+        />
       </Box>
       <Box mt={3}>
         <BusinessGrid places={rows} />

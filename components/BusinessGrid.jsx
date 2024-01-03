@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {BusinessInfoType} from '../test-data/data-types';
-import {Grid} from '@mui/material';
-import BusinessCard from './BusinessCard';
+import React from "react";
+import PropTypes from "prop-types";
+import { BusinessInfoType } from "../test-data/data-types";
+import { Grid } from "@mui/material";
+import BusinessCard from "./BusinessCard";
 
-const BusinessGrid = ({places}) => {
+const BusinessGrid = ({ places }) => {
   return (
     <Grid container spacing={1}>
       {places.map((businessInfo, index) => (
