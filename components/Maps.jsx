@@ -5,7 +5,7 @@ import WebsiteLink from './WebsiteLink';
 import places from '../test-data/places';
 import {
   Typography,
-  MuiThemeProvider,
+  ThemeProvider,
   useTheme,
   Paper,
 
@@ -87,7 +87,7 @@ const Maps = ({zoom, google}) => {
         <InfoWindow
           marker={activeMarker}
           visible={typeof activeMarker !== 'null'}>
-          <MuiThemeProvider theme={theme}>
+          <ThemeProvider theme={theme}>
             <div style={{
               display: 'flex',
               flexDirection: 'column',
@@ -100,7 +100,7 @@ const Maps = ({zoom, google}) => {
                 label={markerDetails.website}
                 color='primary'/>
             </div>
-          </MuiThemeProvider>
+          </ThemeProvider>
         </InfoWindow>
       </Map>
     </StyledPaper>
