@@ -28,25 +28,6 @@ const Nav = () => {
           </NextMuiLink>);
         })}
       </Toolbar>
-      <style jsx>{`
-        .navigation {
-            display: flex;
-            flex-direction: row;
-            margin: 0 5%;
-            width: 40%;
-            height: 60px;
-            align-items: center;
-            justify-content: space-evenly
-
-        }
-
-        @media(max-width: 480px) {
-          .navigation {
-            width: 100%;
-            margin: 0;
-          }
-        }
-      `}</style>
     </AppBar>
   );
 };

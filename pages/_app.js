@@ -44,15 +44,6 @@ export default class RoostApp extends App {
             <Footer />
           </AnalyticsWrapper>
         </ThemeProvider>
-        <style jsx global>{`
-          main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-        `}</style>
       </React.Fragment>
     );
   }

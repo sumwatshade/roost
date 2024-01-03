@@ -1,5 +1,7 @@
+import type { Config } from 'jest'
+import nextJest from 'next/jest'
 
-module.exports = {
+const config: Config = {
   testPathIgnorePatterns: [
     '<rootDir>/.next/',
     '<rootDir>/node_modules/',
@@ -34,3 +36,7 @@ module.exports = {
       },
     ]],
 };
+
+export default nextJest({
+  dir: './',
+})(config)
