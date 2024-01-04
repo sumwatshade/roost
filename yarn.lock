@@ -3891,12 +3891,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:7.0.4":
-  version: 7.0.4
-  resolution: "husky@npm:7.0.4"
+"husky@npm:8.0.3":
+  version: 8.0.3
+  resolution: "husky@npm:8.0.3"
   bin:
     husky: lib/bin.js
-  checksum: aacb2b8fbfed0ec161f94e9b08d422c51fec073def4e165e57da42f47c10f520a5f0a88b42efc667784e314a1af83cf1994b582cd6f4b0333739921a601c6187
+  checksum: 6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
   languageName: node
   linkType: hard
 
@@ -6450,7 +6450,7 @@ __metadata:
     eslint-plugin-react: "npm:7.33.2"
     fuse.js: "npm:6.5.3"
     google-maps-react: "npm:2.0.6"
-    husky: "npm:7.0.4"
+    husky: "npm:8.0.3"
     jest: "npm:^29"
     jest-environment-jsdom: "npm:29.7.0"
     jest-junit: "npm:16.0.0"
