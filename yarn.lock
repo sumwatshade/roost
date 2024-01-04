@@ -3549,10 +3549,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fuse.js@npm:6.5.3":
-  version: 6.5.3
-  resolution: "fuse.js@npm:6.5.3"
-  checksum: 702c75e60660d36476d164063cfc4fd65586ccf4d2e466cd7598928545e2516f9d9138e5c323681ff69ee227973d0c507ba1b2f1c7f281450aefaf0fec5b0a83
+"fuse.js@npm:6.6.2":
+  version: 6.6.2
+  resolution: "fuse.js@npm:6.6.2"
+  checksum: c2fe4f234f516e9ea83b06f06f8f3c8b7117f51aa75bbccd052eed0c0423364bf1e360ffbf29cadae8ef6aa39476b7961eaf9d07bed779cea5c83d62b34e2df9
   languageName: node
   linkType: hard
 
@@ -6448,7 +6448,7 @@ __metadata:
     eslint-config-google: "npm:0.14.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-react: "npm:7.33.2"
-    fuse.js: "npm:6.5.3"
+    fuse.js: "npm:6.6.2"
     google-maps-react: "npm:2.0.6"
     husky: "npm:8.0.3"
     jest: "npm:^29"
