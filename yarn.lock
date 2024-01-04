@@ -4611,15 +4611,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-junit@npm:13.0.0":
-  version: 13.0.0
-  resolution: "jest-junit@npm:13.0.0"
+"jest-junit@npm:13.2.0":
+  version: 13.2.0
+  resolution: "jest-junit@npm:13.2.0"
   dependencies:
     mkdirp: "npm:^1.0.4"
     strip-ansi: "npm:^6.0.1"
     uuid: "npm:^8.3.2"
     xml: "npm:^1.0.1"
-  checksum: 470028c9e7c0143ae28a30dd4760dc67f62682dd927344b33e02e57812524b3d3c4233703756f49f8fc67ef0c944084af69b3a6f396514f78196e43e23e37b09
+  checksum: c77c8fb91d9250ed062cf2e36243b5876bed1bf47a168fa3c73acd9c90ad49929e08fe52fe5b1ef7d65ad29a5e00838a696894b28372f5d89e489934e85ea1b5
   languageName: node
   linkType: hard
 
@@ -6453,7 +6453,7 @@ __metadata:
     husky: "npm:7.0.4"
     jest: "npm:^29"
     jest-environment-jsdom: "npm:29.7.0"
-    jest-junit: "npm:13.0.0"
+    jest-junit: "npm:13.2.0"
     lint-staged: "npm:12.5.0"
     next: "npm:^14"
     prettier: "npm:3.1.1"
