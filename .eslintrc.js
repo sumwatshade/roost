@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: ["plugin:react/recommended", "google", "prettier"],
+  extends: ["plugin:react/recommended", "google", "next", "prettier"],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
