@@ -6700,12 +6700,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.1.1":
-  version: 3.1.1
-  resolution: "prettier@npm:3.1.1"
+"prettier@npm:3.4.2":
+  version: 3.4.2
+  resolution: "prettier@npm:3.4.2"
   bin:
     prettier: bin/prettier.cjs
-  checksum: facc944ba20e194ff4db765e830ffbcb642803381f0d2033ed397e79904fa4ccc877dc25ad68f42d36985c01d051c990ca1b905fb83d2d7d65fe69e4386fa1a3
+  checksum: 99e076a26ed0aba4ebc043880d0f08bbb8c59a4c6641cdee6cdadf2205bdd87aa1d7823f50c3aea41e015e99878d37c58d7b5f0e663bba0ef047f94e36b96446
   languageName: node
   linkType: hard
 
@@ -7144,7 +7144,7 @@ __metadata:
     jest-junit: "npm:16.0.0"
     lint-staged: "npm:15.2.0"
     next: "npm:^14"
-    prettier: "npm:3.1.1"
+    prettier: "npm:3.4.2"
     react: "npm:^18"
     react-dom: "npm:^18"
     react-ga: "npm:3.3.1"
