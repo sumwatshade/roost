@@ -24,7 +24,7 @@
     "react-ga": "3.3.1"
   },
   "devDependencies": {
-    "@babel/core": "7.23.7",
+    "@babel/core": "7.29.0",
     "@commitlint/cli": "18.4.4",
     "@commitlint/config-conventional": "18.4.4",
     "@testing-library/react": "^14",
