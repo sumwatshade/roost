@@ -1968,12 +1968,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.19.30":
-  version: 20.19.30
-  resolution: "@types/node@npm:20.19.30"
+"@types/node@npm:20.19.33":
+  version: 20.19.33
+  resolution: "@types/node@npm:20.19.33"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 23dbea652727d947ea35fc1c4e8acb7e1c535e85f6c139c3a4697864a5af164655ce305ab0877ea4cca537deee0405bf56aeac714f236ae1a3dd0fa6b87cc860
+  checksum: a1a6234a2b6fa577fbb1ccc471e5e54a79c6e1a51be10a67b034461b752a50017854810e943494f20b3c3c6d14df84c93757e0a2ec57aa81c830d6faeab72cf2
   languageName: node
   linkType: hard
 
@@ -8347,7 +8347,7 @@ __metadata:
     "@mui/styles": "npm:5.18.0"
     "@testing-library/react": "npm:^14.3.1"
     "@types/jest": "npm:29.5.14"
-    "@types/node": "npm:20.19.30"
+    "@types/node": "npm:20.19.33"
     babel-jest: "npm:29.7.0"
     eslint: "npm:8.57.1"
     eslint-config-google: "npm:0.14.0"
